@@ -1,0 +1,69 @@
+[
+ {
+  "place_id": 41222985,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 568367654,
+  "lat": "6.5834603",
+  "lon": "3.3571576",
+  "category": "amenity",
+  "type": "hospital",
+  "place_rank": 30,
+  "importance": 6.974059662771065e-05,
+  "addresstype": "amenity",
+  "name": "Reddington Hospital - Ikeja GRA",
+  "display_name": "Reddington Hospital - Ikeja GRA, Isaac John Street, Oshosun, Onigbongbo, Ikeja, Lagos, 100271, Nigeria",
+  "address": {
+   "amenity": "Reddington Hospital - Ikeja GRA",
+   "road": "Isaac John Street",
+   "suburb": "Oshosun",
+   "village": "Onigbongbo",
+   "city": "Ikeja",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "100271",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5832331",
+   "6.5836834",
+   "3.3568566",
+   "3.3574587"
+  ]
+ },
+ {
+  "place_id": 41114620,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 551464850,
+  "lat": "6.5840295",
+  "lon": "3.3576231",
+  "category": "amenity",
+  "type": "bank",
+  "place_rank": 30,
+  "importance": 6.974059662771065e-05,
+  "addresstype": "amenity",
+  "name": "First City Monument Bank",
+  "display_name": "First City Monument Bank, 48, Isaac John Street, Oshosun, Onigbongbo, Ikeja, Lagos, 100271, Nigeria",
+  "address": {
+   "amenity": "First City Monument Bank",
+   "house_number": "48",
+   "road": "Isaac John Street",
+   "suburb": "Oshosun",
+   "village": "Onigbongbo",
+   "city": "Ikeja",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "100271",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5839493",
+   "6.5841388",
+   "3.3575089",
+   "3.3577373"
+  ]
+ }
+]

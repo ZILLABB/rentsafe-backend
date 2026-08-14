@@ -1,0 +1,191 @@
+[
+ {
+  "place_id": 40612195,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 12260658329,
+  "lat": "6.5114693",
+  "lon": "3.3699982",
+  "category": "railway",
+  "type": "station",
+  "place_rank": 30,
+  "importance": 6.974059662771065e-05,
+  "addresstype": "railway",
+  "name": "Yaba",
+  "display_name": "Yaba, Olajuwon Street, Tinubu, Mushin, Lagos, 102215, Nigeria",
+  "address": {
+   "railway": "Yaba",
+   "road": "Olajuwon Street",
+   "suburb": "Tinubu",
+   "county": "Mushin",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "102215",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5064693",
+   "6.5164693",
+   "3.3649982",
+   "3.3749982"
+  ]
+ },
+ {
+  "place_id": 40676344,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 671850885,
+  "lat": "6.5187275",
+  "lon": "3.3741408",
+  "category": "amenity",
+  "type": "college",
+  "place_rank": 30,
+  "importance": 0.35974352801595927,
+  "addresstype": "amenity",
+  "name": "Yaba College of Technology",
+  "display_name": "Yaba College of Technology, Herbert Macaulay Way, Ebute-Metta, Shomolu, Lagos, 104233, Nigeria",
+  "address": {
+   "amenity": "Yaba College of Technology",
+   "road": "Herbert Macaulay Way",
+   "suburb": "Ebute-Metta",
+   "county": "Shomolu",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "104233",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5161567",
+   "6.5209790",
+   "3.3714662",
+   "3.3770046"
+  ]
+ },
+ {
+  "place_id": 40608770,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 114912308,
+  "lat": "6.4923628",
+  "lon": "3.3811425",
+  "category": "highway",
+  "type": "unclassified",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Yaba Road",
+  "display_name": "Yaba Road, Ebute-Metta, Lagos Mainland, Lagos, 100261, Nigeria",
+  "address": {
+   "road": "Yaba Road",
+   "suburb": "Ebute-Metta",
+   "county": "Lagos Mainland",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "100261",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4886375",
+   "6.4961128",
+   "3.3797014",
+   "3.3826438"
+  ]
+ },
+ {
+  "place_id": 40599156,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 535027936,
+  "lat": "6.5094041",
+  "lon": "3.3706867",
+  "category": "highway",
+  "type": "secondary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Yaba Flyover Bridge",
+  "display_name": "Yaba Flyover Bridge, Tinubu, Mushin, Lagos, 102215, Nigeria",
+  "address": {
+   "road": "Yaba Flyover Bridge",
+   "suburb": "Tinubu",
+   "county": "Mushin",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "102215",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5091367",
+   "6.5096715",
+   "3.3701584",
+   "3.3712149"
+  ]
+ },
+ {
+  "place_id": 40683618,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 1489667626,
+  "lat": "6.5097558",
+  "lon": "3.3712969",
+  "category": "highway",
+  "type": "secondary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Yaba Flyover Bridge",
+  "display_name": "Yaba Flyover Bridge, Akoka, Shomolu, Lagos, 102215, Nigeria",
+  "address": {
+   "road": "Yaba Flyover Bridge",
+   "suburb": "Akoka",
+   "county": "Shomolu",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "102215",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5096715",
+   "6.5098402",
+   "3.3712149",
+   "3.3713789"
+  ]
+ },
+ {
+  "place_id": 40840623,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 436910705,
+  "lat": "6.5819021",
+  "lon": "3.2751476",
+  "category": "highway",
+  "type": "residential",
+  "place_rank": 26,
+  "importance": 0.05337333409628439,
+  "addresstype": "road",
+  "name": "Yaba Street",
+  "display_name": "Yaba Street, Idimu, Alimosho, Lagos, 102213, Nigeria",
+  "address": {
+   "road": "Yaba Street",
+   "suburb": "Idimu",
+   "village": "Idimu",
+   "county": "Alimosho",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "102213",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5816890",
+   "6.5821300",
+   "3.2747760",
+   "3.2755284"
+  ]
+ }
+]

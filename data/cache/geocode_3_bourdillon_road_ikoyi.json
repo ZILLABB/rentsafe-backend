@@ -1,0 +1,98 @@
+[
+ {
+  "place_id": 40583542,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 106497223,
+  "lat": "6.4472353",
+  "lon": "3.4403681",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Bourdillon Road",
+  "display_name": "Bourdillon Road, Victoria Island, Ikoyi, Eti Osa, Lagos, 101243, Nigeria",
+  "address": {
+   "road": "Bourdillon Road",
+   "suburb": "Victoria Island",
+   "town": "Ikoyi",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "101243",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4438031",
+   "6.4476124",
+   "3.4301148",
+   "3.4498005"
+  ]
+ },
+ {
+  "place_id": 40588132,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 294599764,
+  "lat": "6.4466924",
+  "lon": "3.4444986",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Bourdillon Road",
+  "display_name": "Bourdillon Road, Maroko, Ikoyi, Eti Osa, Lagos, 106104, Nigeria",
+  "address": {
+   "road": "Bourdillon Road",
+   "suburb": "Maroko",
+   "town": "Ikoyi",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "106104",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4442615",
+   "6.4476971",
+   "3.4386579",
+   "3.4497176"
+  ]
+ },
+ {
+  "place_id": 40514109,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 505413821,
+  "lat": "6.4451339",
+  "lon": "3.4340153",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Bourdillon Road",
+  "display_name": "Bourdillon Road, Victoria Island, Ikoyi, Eti Osa, Lagos, 332222, Nigeria",
+  "address": {
+   "road": "Bourdillon Road",
+   "suburb": "Victoria Island",
+   "town": "Ikoyi",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "332222",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4438568",
+   "6.4467190",
+   "3.4293150",
+   "3.4386579"
+  ]
+ }
+]

@@ -1,0 +1,34 @@
+[
+ {
+  "place_id": 40587420,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 134404795,
+  "lat": "6.6014325",
+  "lon": "3.3520642",
+  "category": "highway",
+  "type": "secondary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Allen Avenue",
+  "display_name": "Allen Avenue, Oregun, Alausa, Ikeja, Lagos, 100282, Nigeria",
+  "address": {
+   "road": "Allen Avenue",
+   "suburb": "Oregun",
+   "village": "Alausa",
+   "city": "Ikeja",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "100282",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5958717",
+   "6.6070556",
+   "3.3491387",
+   "3.3550703"
+  ]
+ }
+]

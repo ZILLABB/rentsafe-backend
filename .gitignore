@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Env / secrets
+.env
+.env.local
+
+# Local dev database — recreated and seeded on first run
+*.db
+*.db-journal
+*.sqlite3
+
+# Uploaded media (generated at runtime; production uses object storage)
+data/media/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

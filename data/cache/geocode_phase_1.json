@@ -1,0 +1,188 @@
+[
+ {
+  "place_id": 40621891,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 783761330,
+  "lat": "6.4383735",
+  "lon": "3.5058633",
+  "category": "landuse",
+  "type": "residential",
+  "place_rank": 24,
+  "importance": 0.08006974059662772,
+  "addresstype": "residential",
+  "name": "Femi Okunnu Housing Estate (Phase 1)",
+  "display_name": "Femi Okunnu Housing Estate (Phase 1), Jakande, Igboefon, Eti Osa, Lagos, Nigeria",
+  "address": {
+   "residential": "Femi Okunnu Housing Estate (Phase 1)",
+   "suburb": "Jakande",
+   "village": "Igboefon",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4366045",
+   "6.4405287",
+   "3.5045585",
+   "3.5071357"
+  ]
+ },
+ {
+  "place_id": 40575904,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 992673428,
+  "lat": "6.4327419",
+  "lon": "3.5183898",
+  "category": "landuse",
+  "type": "residential",
+  "place_rank": 24,
+  "importance": 0.08006974059662772,
+  "addresstype": "residential",
+  "name": "southlake homes phase 1",
+  "display_name": "southlake homes phase 1, Igbo-Efon, Eti Osa, Lagos, Nigeria",
+  "address": {
+   "residential": "southlake homes phase 1",
+   "suburb": "Igbo-Efon",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4321305",
+   "6.4333497",
+   "3.5181645",
+   "3.5186205"
+  ]
+ },
+ {
+  "place_id": 41252837,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 135595664,
+  "lat": "6.6347822",
+  "lon": "3.3592705",
+  "category": "highway",
+  "type": "unclassified",
+  "place_rank": 26,
+  "importance": 0.0533834950789654,
+  "addresstype": "road",
+  "name": "Omole Phase 1",
+  "display_name": "Omole Phase 1, Aguda, Ikeja, Lagos, 100248, Nigeria",
+  "address": {
+   "road": "Omole Phase 1",
+   "suburb": "Aguda",
+   "city": "Ikeja",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "100248",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.6326089",
+   "6.6376234",
+   "3.3557143",
+   "3.3632143"
+  ]
+ },
+ {
+  "place_id": 381681281,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 13749481262,
+  "lat": "6.4475959",
+  "lon": "3.4590768",
+  "category": "amenity",
+  "type": "ferry_terminal",
+  "place_rank": 30,
+  "importance": 6.974059662771065e-05,
+  "addresstype": "amenity",
+  "name": "alluvia marine/afisco (lekki phase 1)",
+  "display_name": "alluvia marine/afisco (lekki phase 1), Wole Olateju Crescent, Maroko, Ikoyi, Eti Osa, Lagos, 106104, Nigeria",
+  "address": {
+   "amenity": "alluvia marine/afisco (lekki phase 1)",
+   "road": "Wole Olateju Crescent",
+   "suburb": "Maroko",
+   "town": "Ikoyi",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "106104",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4475459",
+   "6.4476459",
+   "3.4590268",
+   "3.4591268"
+  ]
+ },
+ {
+  "place_id": 40605940,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 13235411954,
+  "lat": "6.4413987",
+  "lon": "3.4704698",
+  "category": "place",
+  "type": "suburb",
+  "place_rank": 19,
+  "importance": 0.14673640726329437,
+  "addresstype": "suburb",
+  "name": "Lekki Phase I",
+  "display_name": "Lekki Phase I, Ilado, Eti Osa, Lagos, 101244, Nigeria",
+  "address": {
+   "suburb": "Lekki Phase I",
+   "village": "Ilado",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "101244",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4213987",
+   "6.4613987",
+   "3.4504698",
+   "3.4904698"
+  ]
+ },
+ {
+  "place_id": 40604023,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 5777682236,
+  "lat": "6.4538491",
+  "lon": "3.5781822",
+  "category": "place",
+  "type": "suburb",
+  "place_rank": 19,
+  "importance": 0.14670416800183103,
+  "addresstype": "suburb",
+  "name": "Lekki Phase II",
+  "display_name": "Lekki Phase II, Eti Osa, Lagos, 101245, Nigeria",
+  "address": {
+   "suburb": "Lekki Phase II",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "101245",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4338491",
+   "6.4738491",
+   "3.5581822",
+   "3.5981822"
+  ]
+ }
+]

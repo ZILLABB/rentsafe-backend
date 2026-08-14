@@ -1,0 +1,130 @@
+[
+ {
+  "place_id": 40566872,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 294599770,
+  "lat": "6.4477998",
+  "lon": "3.4741406",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Admiralty Way",
+  "display_name": "Admiralty Way, Lekki Phase I, Moba, Eti Osa, Lagos, 101244, Nigeria",
+  "address": {
+   "road": "Admiralty Way",
+   "suburb": "Lekki Phase I",
+   "village": "Moba",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "101244",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4474179",
+   "6.4478276",
+   "3.4664205",
+   "3.4818865"
+  ]
+ },
+ {
+  "place_id": 40587874,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 294599766,
+  "lat": "6.4470643",
+  "lon": "3.4637482",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Admiralty Way",
+  "display_name": "Admiralty Way, Lekki Phase I, Moba, Eti Osa, Lagos, 106104, Nigeria",
+  "address": {
+   "road": "Admiralty Way",
+   "suburb": "Lekki Phase I",
+   "village": "Moba",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "106104",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4466557",
+   "6.4473841",
+   "3.4613599",
+   "3.4661595"
+  ]
+ },
+ {
+  "place_id": 40563399,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 216882041,
+  "lat": "6.4422895",
+  "lon": "3.4543395",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Admiralty Way",
+  "display_name": "Admiralty Way, Maroko, Ilado, Eti Osa, Lagos, 106104, Nigeria",
+  "address": {
+   "road": "Admiralty Way",
+   "suburb": "Maroko",
+   "village": "Ilado",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "106104",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4372020",
+   "6.4458587",
+   "3.4542579",
+   "3.4587551"
+  ]
+ },
+ {
+  "place_id": 40575458,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 1024775163,
+  "lat": "6.4430520",
+  "lon": "3.4543124",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Admiralty Way",
+  "display_name": "Admiralty Way, Maroko, Ikoyi, Eti Osa, Lagos, 106104, Nigeria",
+  "address": {
+   "road": "Admiralty Way",
+   "suburb": "Maroko",
+   "town": "Ikoyi",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "106104",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4385711",
+   "6.4459354",
+   "3.4541532",
+   "3.4587038"
+  ]
+ }
+]

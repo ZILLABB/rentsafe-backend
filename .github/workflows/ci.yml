@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      # The app has only ever run on SQLite. Exercising the production engine
+      # here is what stops a Postgres-only failure — a naive/aware timestamp
+      # cast, say — being discovered by a deploy.
+      postgres:
+        image: postgis/postgis:16-3.4
+        env:
+          POSTGRES_USER: rentsafe
+          POSTGRES_PASSWORD: rentsafe
+          POSTGRES_DB: rentsafe
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U rentsafe"
+          --health-interval 5s --health-timeout 3s --health-retries 10
+      redis:
+        image: redis:7-alpine
+        ports: ["6379:6379"]
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s --health-timeout 3s --health-retries 10
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -e ".[dev]" httpx
+
+      - name: Lint
+        run: ruff check .
+
+      - name: Test
+        run: pytest -q
+
+      - name: Migrations apply cleanly to Postgres
+        # Not just "a migration exists" — that it runs against the real engine.
+        env:
+          DATABASE_URL: postgresql+asyncpg://rentsafe:rentsafe@localhost:5432/rentsafe
+        run: |
+          alembic upgrade head
+          alembic check
+
+      - name: App boots against Postgres and Redis
+        # Catches the class of failure that only appears with the production
+        # engines: driver gaps, dialect differences, a missing extension.
+        env:
+          ENVIRONMENT: staging
+          DEBUG: "false"
+          DATABASE_URL: postgresql+asyncpg://rentsafe:rentsafe@localhost:5432/rentsafe
+          REDIS_URL: redis://localhost:6379/0
+          JWT_SECRET: ci-secret-value-long-enough-to-pass-the-guard
+          PHONE_HASH_PEPPER: ci-pepper-value-long-enough-to-pass-guard
+          TERMII_API_KEY: ci-placeholder
+          CORS_ORIGINS: http://localhost:5173
+        run: |
+          uvicorn app.main:app --port 8000 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://localhost:8000/health/ready; then exit 0; fi
+            sleep 1
+          done
+          echo "readiness never went green"; exit 1
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the API image
+        run: docker build -t rentsafe-api .

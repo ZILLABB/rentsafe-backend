@@ -1,0 +1,380 @@
+{
+ "version": 0.6,
+ "generator": "Overpass API 0.7.62.11 87bfad18",
+ "osm3s": {
+  "timestamp_osm_base": "2026-08-13T20:47:21Z",
+  "timestamp_areas_base": "2026-08-13T02:12:45Z",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+ },
+ "elements": [
+  {
+   "type": "relation",
+   "id": 3718183,
+   "center": {
+    "lat": 6.6251239,
+    "lon": 3.3176625
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Agege",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q3509545",
+    "wikipedia": "en:Agege"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718184,
+   "center": {
+    "lat": 6.4553786,
+    "lon": 3.3358714
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Ajeromi/Ifelodun",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q3509013",
+    "wikipedia": "en:Ajeromi-Ifelodun"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718185,
+   "center": {
+    "lat": 6.5844702,
+    "lon": 3.2553319
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Alimosho",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q3509580",
+    "wikipedia": "en:Alimosho"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718186,
+   "center": {
+    "lat": 6.4474364,
+    "lon": 3.3016298
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Amuwo Odofin",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q3509621",
+    "wikipedia": "en:Amuwo-Odofin"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718187,
+   "center": {
+    "lat": 6.4446637,
+    "lon": 3.3656108
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Apapa",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q617618",
+    "wikipedia": "en:Apapa"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718188,
+   "center": {
+    "lat": 6.4384731,
+    "lon": 2.9113152
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Badagry",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q798812",
+    "wikipedia": "en:Badagry"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718189,
+   "center": {
+    "lat": 6.5252491,
+    "lon": 3.9847728
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Epe",
+    "name:ru": "Эпе",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q1023707",
+    "wikipedia": "en:Epe, Lagos"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718190,
+   "center": {
+    "lat": 6.4597307,
+    "lon": 3.5358249
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Eti Osa",
+    "name:yo": "Etí Ọ̀sà",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q5404527",
+    "wikipedia": "en:Eti-Osa"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718191,
+   "center": {
+    "lat": 6.4718029,
+    "lon": 3.9343142
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Ibeju Lekki",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q5983804",
+    "wikipedia": "en:Ibeju-Lekki"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718192,
+   "center": {
+    "lat": 6.6601393,
+    "lon": 3.3066131
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Ifako/Ijaye",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q5991116",
+    "wikipedia": "en:Ifako-Ijaiye"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718193,
+   "center": {
+    "lat": 6.6048626,
+    "lon": 3.3466577
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Ikeja",
+    "name:ru": "Икеджа",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q1024647",
+    "wikipedia": "en:Ikeja"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718194,
+   "center": {
+    "lat": 6.6049207,
+    "lon": 3.5695137
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Ìkòròdú",
+    "name:ar": "إكورودو",
+    "name:en": "Ikorodu",
+    "name:ru": "Икороду",
+    "name:yo": "Ìkòròdú",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q1658159",
+    "wikipedia": "en:Ikorodu"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718195,
+   "center": {
+    "lat": 6.5816281,
+    "lon": 3.414828
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Kosofe",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q6433326",
+    "wikipedia": "en:Kosofe"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718196,
+   "center": {
+    "lat": 6.529042,
+    "lon": 3.3473222
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Mushin",
+    "name:ru": "Мушин",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q3139881",
+    "wikipedia": "en:Mushin, Lagos"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718197,
+   "center": {
+    "lat": 6.4632169,
+    "lon": 3.1619135
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Ojo",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q623249",
+    "wikipedia": "en:Ojo, Lagos"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718198,
+   "center": {
+    "lat": 6.5364462,
+    "lon": 3.3180397
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Oshodi/Isolo",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q7106648",
+    "wikipedia": "en:Oshodi-Isolo"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718199,
+   "center": {
+    "lat": 6.533621,
+    "lon": 3.3868221
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Shomolu",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q280585",
+    "wikipedia": "en:Somolu"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 3718200,
+   "center": {
+    "lat": 6.4863201,
+    "lon": 3.3493631
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Surulere",
+    "source": "ehealthafrica.org",
+    "source:date": "2013",
+    "type": "boundary",
+    "wikidata": "Q994119",
+    "wikipedia": "en:Surulere"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 5403871,
+   "center": {
+    "lat": 6.4928028,
+    "lon": 3.3864123
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Lagos Mainland",
+    "source": "ehealthafrica.org",
+    "source:date": "2015",
+    "type": "boundary",
+    "wikidata": "Q6472602",
+    "wikipedia": "en:Lagos Mainland"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 5404351,
+   "center": {
+    "lat": 6.515789,
+    "lon": 3.509603
+   },
+   "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "Lagos Island",
+    "name:ar": "جزيرة لاغوس",
+    "source": "ehealthafrica.org",
+    "source:date": "2015",
+    "type": "boundary",
+    "wikidata": "Q605583",
+    "wikipedia": "en:Lagos Island"
+   }
+  }
+ ]
+}

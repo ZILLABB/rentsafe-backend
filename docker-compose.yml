@@ -1,0 +1,71 @@
+# Production-shaped local stack: Postgres + PostGIS, Redis, and the API.
+#
+#   docker compose up --build
+#
+# The zero-setup SQLite path in the README still works and is what most local
+# development should use. This exists so the Postgres and Redis paths get
+# exercised before a deploy discovers them — the app has run only on SQLite
+# and an in-process OTP store until now.
+
+services:
+  db:
+    # PostGIS rather than plain Postgres: the spatial dedup query is meant to
+    # move to ST_DWithin, and geoalchemy2 is already a declared dependency.
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: rentsafe
+      POSTGRES_PASSWORD: rentsafe
+      POSTGRES_DB: rentsafe
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rentsafe"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    # OTP codes are short-lived and losing them on restart only costs a resend,
+    # so persistence is off deliberately.
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: ./backend
+    depends_on:
+      db: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    environment:
+      ENVIRONMENT: staging
+      DEBUG: "false"
+      DATABASE_URL: postgresql+asyncpg://rentsafe:rentsafe@db:5432/rentsafe
+      REDIS_URL: redis://redis:6379/0
+      CORS_ORIGINS: http://localhost:5173
+      # Placeholders that satisfy the production guard. Real deployments inject
+      # these from a secret store; committing real ones would be the mistake
+      # the config guard exists to catch.
+      JWT_SECRET: local-staging-secret-not-for-production-use
+      PHONE_HASH_PEPPER: local-staging-pepper-not-for-production-use
+      # Without this the app refuses to boot, which is the point: no SMS means
+      # no sign-in. Set a real Termii key to exercise delivery.
+      TERMII_API_KEY: "${TERMII_API_KEY:-dev-placeholder}"
+    ports: ["8001:8000"]
+    volumes:
+      # Media on a container filesystem is lost on redeploy. A named volume is
+      # the local stand-in for the object storage production needs.
+      - media:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/health/ready"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
+  media:

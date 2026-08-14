@@ -1,0 +1,57 @@
+{
+ "version": 0.6,
+ "generator": "Overpass API 0.7.62.11 87bfad18",
+ "osm3s": {
+  "timestamp_osm_base": "2026-08-13T20:48:21Z",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+ },
+ "elements": [
+  {
+   "type": "node",
+   "id": 12814687055,
+   "lat": 6.4477684,
+   "lon": 3.4593349,
+   "tags": {
+    "admin_level": "6",
+    "admin_name": "Eti_Osa",
+    "amenity": "ferry_terminal",
+    "amenity:note": "this location is a ferry jetty with active commercial ferry activity.",
+    "boat:rental": "true",
+    "cargo": "passengers",
+    "ferry": "yes",
+    "ferry_stop_id": "68",
+    "name": "Alluvia Marine/Afisco (Lekki 1)",
+    "notes": "admin_level 6 represents local government areas",
+    "operational_status": "operational",
+    "operator": "private",
+    "public_transport": "station",
+    "source": "survey",
+    "source:name": "stears open data",
+    "survey:date": "2025-02-22"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13749481262,
+   "lat": 6.4475959,
+   "lon": 3.4590768,
+   "tags": {
+    "admin_level": "6",
+    "admin_name": "eti osa",
+    "amenity": "ferry_terminal",
+    "boat_rental": "true",
+    "cargo": "passengers",
+    "ferry_stop_id": "12",
+    "name": "alluvia marine/afisco (lekki phase 1)",
+    "notes": "admin_level 6 represents local government areas",
+    "operational_status": "operational",
+    "operator": "private",
+    "operator_name": "private",
+    "public_transport": "stop_position",
+    "source": "survey",
+    "source:name": "public tech studio",
+    "source_date": "2026-04-21"
+   }
+  }
+ ]
+}

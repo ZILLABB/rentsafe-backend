@@ -1,0 +1,98 @@
+[
+ {
+  "place_id": 40681767,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 136341477,
+  "lat": "6.5917817",
+  "lon": "3.3593511",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Opebi Road",
+  "display_name": "Opebi Road, Oregun, Alausa, Ikeja, Lagos, 100281, Nigeria",
+  "address": {
+   "road": "Opebi Road",
+   "suburb": "Oregun",
+   "village": "Alausa",
+   "city": "Ikeja",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "100281",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5871579",
+   "6.5958940",
+   "3.3550703",
+   "3.3631503"
+  ]
+ },
+ {
+  "place_id": 40674399,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 1137207824,
+  "lat": "6.5846539",
+  "lon": "3.3653916",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Opebi Road",
+  "display_name": "Opebi Road, Oregun, Onigbongbo, Ikeja, Lagos, 100211, Nigeria",
+  "address": {
+   "road": "Opebi Road",
+   "suburb": "Oregun",
+   "village": "Onigbongbo",
+   "city": "Ikeja",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "100211",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5832000",
+   "6.5861494",
+   "3.3640566",
+   "3.3667712"
+  ]
+ },
+ {
+  "place_id": 40660623,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 1445758062,
+  "lat": "6.5866607",
+  "lon": "3.3636113",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Opebi Road",
+  "display_name": "Opebi Road, Oregun, Onigbongbo, Ikeja, Lagos, 100281, Nigeria",
+  "address": {
+   "road": "Opebi Road",
+   "suburb": "Oregun",
+   "village": "Onigbongbo",
+   "city": "Ikeja",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "100281",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5861494",
+   "6.5871579",
+   "3.3631503",
+   "3.3640566"
+  ]
+ }
+]

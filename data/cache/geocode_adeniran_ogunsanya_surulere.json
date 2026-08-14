@@ -1,0 +1,67 @@
+[
+ {
+  "place_id": 40586442,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 10636727,
+  "lat": "6.4943138",
+  "lon": "3.3573516",
+  "category": "highway",
+  "type": "secondary",
+  "place_rank": 26,
+  "importance": 0.053403073929961055,
+  "addresstype": "road",
+  "name": "Adeniran Ogunsanya Street",
+  "display_name": "Adeniran Ogunsanya Street, Surulere, Animashawun, Surulere, Lagos, 102215, Nigeria",
+  "address": {
+   "road": "Adeniran Ogunsanya Street",
+   "suburb": "Surulere",
+   "village": "Animashawun",
+   "county": "Surulere",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "102215",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4897989",
+   "6.4987262",
+   "3.3561717",
+   "3.3584368"
+  ]
+ },
+ {
+  "place_id": 40580360,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 84622280,
+  "lat": "6.4899027",
+  "lon": "3.3558069",
+  "category": "highway",
+  "type": "traffic_signals",
+  "place_rank": 30,
+  "importance": 6.974059662771065e-05,
+  "addresstype": "highway",
+  "name": "Adeniran Ogunsanya/Bode Thomas",
+  "display_name": "Adeniran Ogunsanya/Bode Thomas, Bode Thomas Street, Surulere, Animashawun, Surulere, Lagos, 102215, Nigeria",
+  "address": {
+   "highway": "Adeniran Ogunsanya/Bode Thomas",
+   "road": "Bode Thomas Street",
+   "suburb": "Surulere",
+   "village": "Animashawun",
+   "county": "Surulere",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "102215",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4898527",
+   "6.4899527",
+   "3.3557569",
+   "3.3558569"
+  ]
+ }
+]

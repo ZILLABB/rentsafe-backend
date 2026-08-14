@@ -1,0 +1,92 @@
+{
+ "version": 0.6,
+ "generator": "Overpass API 0.7.62.11 87bfad18",
+ "osm3s": {
+  "timestamp_osm_base": "2026-08-13T20:48:21Z",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+ },
+ "elements": [
+  {
+   "type": "node",
+   "id": 1423114429,
+   "lat": 6.5059942,
+   "lon": 3.3645844,
+   "tags": {
+    "highway": "bus_stop",
+    "name": "BRT Barracks",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1513671690,
+   "lat": 6.5021015,
+   "lon": 3.3774681,
+   "tags": {
+    "highway": "bus_stop",
+    "name": "Spencer"
+   }
+  },
+  {
+   "type": "node",
+   "id": 6919151216,
+   "lat": 6.5058662,
+   "lon": 3.3639822,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "public_transport": "station"
+   }
+  },
+  {
+   "type": "node",
+   "id": 6919151222,
+   "lat": 6.5059957,
+   "lon": 3.3637306,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "public_transport": "station"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12260658320,
+   "lat": 6.5017657,
+   "lon": 3.3736846,
+   "tags": {
+    "alt_name": "Ebute Metta Station",
+    "name": "Mobolaji Johnson Station",
+    "public_transport": "station",
+    "railway": "station",
+    "start_date": "2021-06-10",
+    "train": "yes",
+    "wikidata": "Q110571183"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12260658329,
+   "lat": 6.5114693,
+   "lon": 3.3699982,
+   "tags": {
+    "name": "Yaba",
+    "public_transport": "station",
+    "railway": "station",
+    "train": "yes"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12260658330,
+   "lat": 6.5324821,
+   "lon": 3.3614254,
+   "tags": {
+    "name": "Mushin",
+    "public_transport": "station",
+    "railway": "station",
+    "train": "yes"
+   }
+  }
+ ]
+}

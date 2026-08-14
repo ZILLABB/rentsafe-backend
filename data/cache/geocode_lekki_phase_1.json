@@ -1,0 +1,35 @@
+[
+ {
+  "place_id": 41155861,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 13749481262,
+  "lat": "6.4475959",
+  "lon": "3.4590768",
+  "category": "amenity",
+  "type": "ferry_terminal",
+  "place_rank": 30,
+  "importance": 6.974059662771065e-05,
+  "addresstype": "amenity",
+  "name": "alluvia marine/afisco (lekki phase 1)",
+  "display_name": "alluvia marine/afisco (lekki phase 1), Wole Olateju Crescent, Maroko, Ikoyi, Eti Osa, Lagos, 106104, Nigeria",
+  "address": {
+   "amenity": "alluvia marine/afisco (lekki phase 1)",
+   "road": "Wole Olateju Crescent",
+   "suburb": "Maroko",
+   "town": "Ikoyi",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "106104",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4475459",
+   "6.4476459",
+   "3.4590268",
+   "3.4591268"
+  ]
+ }
+]
