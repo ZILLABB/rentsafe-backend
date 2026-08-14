@@ -721,3 +721,94 @@ def lagos_residential_buildings(*, offline: bool = False) -> list[dict]:
             }
         )
     return sorted(out, key=lambda r: r["name"])
+
+
+# Overture Maps: a Linux Foundation dataset combining OSM with contributions
+# from Meta, Microsoft and others. Its *Places* theme is the part that matters
+# here — Meta-sourced records carry CDLA Permissive 2.0, which allows commercial
+# use without share-alike, unlike the ODbL that governs everything OSM-derived.
+OVERTURE_RELEASE = "2026-06-17.0"
+OVERTURE_S3 = "s3://overturemaps-us-west-2/release"
+OVERTURE = (
+    "Overture Maps Foundation",
+    "CDLA Permissive 2.0",
+    "https://overturemaps.org",
+)
+
+# Lagos State, matching the geocoder's viewbox.
+LAGOS_BBOX = (2.70, 6.35, 4.35, 6.75)
+
+# Overture's own confidence in the record. Below this the listings are mostly
+# miscategorised — a bank and a furniture shop both appear as "real_estate" at
+# low confidence, and publishing either as an estate agent would be a false
+# statement about a real business.
+AGENT_MIN_CONFIDENCE = 0.7
+
+# Only the two categories that actually describe a letting business. The wider
+# "real_estate" bucket is where the miscategorised records live.
+AGENT_CATEGORIES = ("real_estate_agent", "property_management")
+
+
+def lagos_estate_agents(*, offline: bool = False) -> list[dict]:
+    """Named Lagos estate agents and property managers, from Overture Places.
+
+    Read straight from the public parquet on S3 with a bounding-box predicate,
+    so this never downloads the global dataset — but it does need DuckDB, which
+    is why it lives behind the ``import`` extra rather than in the base install.
+
+    Only high-confidence records in the two letting-related categories are
+    returned. These become *unclaimed directory entries* with no rating and no
+    reviews: being listed is not a judgement about anyone, and the claim flow
+    is how an agent takes control of their own profile.
+    """
+
+    def fetch() -> list[dict]:
+        import duckdb  # optional dependency — see pyproject [import]
+
+        con = duckdb.connect()
+        con.execute("INSTALL httpfs; LOAD httpfs; SET s3_region='us-west-2';")
+        west, south, east, north = LAGOS_BBOX
+        cats = ", ".join(f"'{c}'" for c in AGENT_CATEGORIES)
+        rows = con.execute(
+            f"""
+            SELECT names.primary AS name,
+                   categories.primary AS category,
+                   bbox.xmin AS lng,
+                   bbox.ymin AS lat,
+                   confidence,
+                   addresses[1].freeform AS address
+            FROM read_parquet(
+                '{OVERTURE_S3}/{OVERTURE_RELEASE}/theme=places/type=place/*.parquet',
+                hive_partitioning=1
+            )
+            WHERE bbox.xmin BETWEEN {west} AND {east}
+              AND bbox.ymin BETWEEN {south} AND {north}
+              AND categories.primary IN ({cats})
+              AND names.primary IS NOT NULL
+              AND confidence >= {AGENT_MIN_CONFIDENCE}
+            """
+        ).fetchall()
+        return [
+            {
+                "name": r[0],
+                "category": r[1],
+                "lng": r[2],
+                "lat": r[3],
+                "confidence": r[4],
+                "address": r[5],
+            }
+            for r in rows
+        ]
+
+    data = _get_or_fetch("overture_lagos_agents", fetch, offline=offline)
+    # De-duplicate on name: Overture lists some agencies once per branch, and a
+    # directory with the same firm five times is worse than one entry.
+    seen: set[str] = set()
+    out = []
+    for row in sorted(data, key=lambda r: -(r.get("confidence") or 0)):
+        key = (row["name"] or "").strip().lower()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        out.append(row)
+    return sorted(out, key=lambda r: r["name"])

@@ -34,6 +34,12 @@ storage = [
 push = [
     "pywebpush>=2.0",
 ]
+# Reference-data import only. DuckDB reads Overture's public parquet on S3 with
+# a bounding-box predicate, so the importer never downloads the global dataset —
+# but the running app has no use for it.
+import = [
+    "duckdb>=1.1",
+]
 dev = [
     "pytest>=8.3",
     "pytest-asyncio>=0.24",

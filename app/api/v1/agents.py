@@ -94,11 +94,15 @@ async def _area_avg_fee(session: AsyncSession, agent: Agent) -> float | None:
 async def search_agents(
     session: AsyncSession = Depends(get_session),
     name: str | None = Query(default=None),
-    limit: int = Query(default=20, le=100),
+    limit: int = Query(default=50, le=200),
 ) -> list[AgentOut]:
     stmt = select(Agent)
     if name:
         stmt = stmt.where(Agent.name_normalised.like(f"%{name.strip().lower()}%"))
+    # Ordered so that a truncated page is the *most reviewed* agents rather
+    # than an arbitrary slice: with 80 unclaimed listings and one reviewed
+    # agent, insertion order would bury the only profile anyone has rated.
+    stmt = stmt.order_by(Agent.total_reviews.desc(), Agent.name)
     agents = (await session.execute(stmt.limit(limit))).scalars().all()
     out = []
     for a in agents:

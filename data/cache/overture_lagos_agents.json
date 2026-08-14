@@ -1,0 +1,642 @@
+[
+ {
+  "name": "Primenest Solutions Limited",
+  "category": "property_management",
+  "lng": 3.336939573287964,
+  "lat": 6.448889255523682,
+  "confidence": 0.7467681765556335,
+  "address": "PLT 1, Akinde Road Opposite Pinnacle Grammar School, Alakuko Lagos-State"
+ },
+ {
+  "name": "Lagos Landlord NG",
+  "category": "property_management",
+  "lng": 3.045599937438965,
+  "lat": 6.417349815368652,
+  "confidence": 0.8169764280319214,
+  "address": "KM 42, Lekki-Epe Expressway, Abijo GRA, Ibeju-Lekki LGA"
+ },
+ {
+  "name": "Cowry Realty Development Limited",
+  "category": "property_management",
+  "lng": 3.4255895614624023,
+  "lat": 6.427359104156494,
+  "confidence": 0.7218461632728577,
+  "address": "Plot 1319 Karimu Kotun Street, Victoria Island,  Lagos, Nigeria."
+ },
+ {
+  "name": "Obasco Edge - Lagos Estate Agent",
+  "category": "real_estate_agent",
+  "lng": 3.437636137008667,
+  "lat": 6.427318096160889,
+  "confidence": 0.7583954930305481,
+  "address": "81 Foresythe Street"
+ },
+ {
+  "name": "NaijaLand Assist",
+  "category": "real_estate_agent",
+  "lng": 3.439340829849243,
+  "lat": 6.427707672119141,
+  "confidence": 0.85,
+  "address": "Plot 184 Moshood Olugbani St, Lagos, Nigeria"
+ },
+ {
+  "name": "Houses for rent in Lagos",
+  "category": "real_estate_agent",
+  "lng": 3.488248586654663,
+  "lat": 6.4379706382751465,
+  "confidence": 0.85,
+  "address": "5 Gbangbala Street Elegushi Lekki Ikate"
+ },
+ {
+  "name": "PWAN Royale",
+  "category": "property_management",
+  "lng": 3.481595277786255,
+  "lat": 6.43716287612915,
+  "confidence": 0.7971991896629333,
+  "address": "1 Freedom Way"
+ },
+ {
+  "name": "mauverick1",
+  "category": "real_estate_agent",
+  "lng": 3.468679428100586,
+  "lat": 6.431700706481934,
+  "confidence": 0.8090572953224182,
+  "address": "14 Victoria Arobieke St"
+ },
+ {
+  "name": "Bolu, Tokun & Co",
+  "category": "real_estate_agent",
+  "lng": 3.416384696960449,
+  "lat": 6.429915428161621,
+  "confidence": 0.8035363554954529,
+  "address": "Plot 1038A Ologun Agbaje St"
+ },
+ {
+  "name": "Sujimoto HQ",
+  "category": "real_estate_agent",
+  "lng": 3.4236559867858887,
+  "lat": 6.444325923919678,
+  "confidence": 0.77,
+  "address": "5th Floor, 188, Off Awolowo Rd, Ikoyi, Lagos"
+ },
+ {
+  "name": "Rosemond Hills Limited",
+  "category": "real_estate_agent",
+  "lng": 3.4761457443237305,
+  "lat": 6.440671920776367,
+  "confidence": 0.7119797468185425,
+  "address": "4 Taiwo Ishola St"
+ },
+ {
+  "name": "Foreshore Waters Limited",
+  "category": "property_management",
+  "lng": 3.46418833732605,
+  "lat": 6.446131229400635,
+  "confidence": 0.7833173871040344,
+  "address": "1B Adebayo Doherty Rd"
+ },
+ {
+  "name": "Top Rank Estates",
+  "category": "real_estate_agent",
+  "lng": 3.4759695529937744,
+  "lat": 6.447939872741699,
+  "confidence": 0.8247515559196472,
+  "address": "2nd Floor, Brasas'R Mall, beside Prince Ebeano supermarket, Opposite Zenith bank. No 69, Admiralty Way, Lekki Phase 1"
+ },
+ {
+  "name": "Xojahs  Court Realtors.",
+  "category": "real_estate_agent",
+  "lng": 3.406104564666748,
+  "lat": 6.451903343200684,
+  "confidence": 0.7533379793167114,
+  "address": "Suite F 147-148, Ikota Shopping Complex VGC Lekki AJAH"
+ },
+ {
+  "name": "Provast Limited",
+  "category": "property_management",
+  "lng": 3.42423677444458,
+  "lat": 6.451541423797607,
+  "confidence": 0.9243265986442566,
+  "address": "9 Macgregor Road Ikoyi"
+ },
+ {
+  "name": "Newland Properties",
+  "category": "real_estate_agent",
+  "lng": 3.395829916000366,
+  "lat": 6.453059196472168,
+  "confidence": 0.7324992418289185,
+  "address": "8 Obalende Rd"
+ },
+ {
+  "name": "ABN Realtors",
+  "category": "property_management",
+  "lng": 3.395829916000366,
+  "lat": 6.453059196472168,
+  "confidence": 0.8781757354736328,
+  "address": "Road 12, Block 10B, Plot 8 Lekki Scheme II, Off Ogombo Road, Abraham Adesanya, Ajah"
+ },
+ {
+  "name": "Ikoroduproperties",
+  "category": "property_management",
+  "lng": 3.395829916000366,
+  "lat": 6.453059196472168,
+  "confidence": 0.8787558674812317,
+  "address": "20, shofunwa crescent, behind airtel office, Lagos road, Agric, Ikorodu"
+ },
+ {
+  "name": "FIPS Multilinks Limited",
+  "category": "property_management",
+  "lng": 3.395829916000366,
+  "lat": 6.453059196472168,
+  "confidence": 0.8569497466087341,
+  "address": "Head office (Lagos): 1st Floor, Block 110, Plot 34A, Freedom Way, Lekki Phase 1, Lekki\\n\\nIbadan office: 2b Aare Ave, opposite Foodco, New Bodija, Ibadan 200212, Oyo"
+ },
+ {
+  "name": "Briscoe Properties Limited",
+  "category": "property_management",
+  "lng": 3.395829916000366,
+  "lat": 6.453059196472168,
+  "confidence": 0.8565776348114014,
+  "address": "18, Fatai Atere Way, Matori"
+ },
+ {
+  "name": "IOne Home Depot.",
+  "category": "real_estate_agent",
+  "lng": 3.398122787475586,
+  "lat": 6.456040382385254,
+  "confidence": 0.8314699530601501,
+  "address": "iOne Home Depot, Shop 56-58 Divine Plaza, Odunade market, Market Street Orile, 100009, Lagos"
+ },
+ {
+  "name": "GilGal Properties Ltd",
+  "category": "real_estate_agent",
+  "lng": 3.423243999481201,
+  "lat": 6.455924987792969,
+  "confidence": 0.8176950812339783,
+  "address": "First Floor Block D Plot 23 Water Corporation Drive off Ligali Ayorinde Street Victoria Island"
+ },
+ {
+  "name": "Oretol Nigeria Limited",
+  "category": "property_management",
+  "lng": 3.440359592437744,
+  "lat": 6.451469898223877,
+  "confidence": 0.8602350354194641,
+  "address": "49 Glover Rd"
+ },
+ {
+  "name": "O-Maconi Consulting and Advisory",
+  "category": "real_estate_agent",
+  "lng": 3.4777371883392334,
+  "lat": 6.4516143798828125,
+  "confidence": 0.7637132406234741,
+  "address": "6 Babatunde Banjo St"
+ },
+ {
+  "name": "Heritage Realtors Limited",
+  "category": "real_estate_agent",
+  "lng": 3.528907060623169,
+  "lat": 6.45567512512207,
+  "confidence": 0.8981973528862,
+  "address": "Unit 17, Maben Terrace Court, Off Chevron Drive, Lekki, Lagos"
+ },
+ {
+  "name": "DapoOlaiya RealEstate",
+  "category": "real_estate_agent",
+  "lng": 3.5046756267547607,
+  "lat": 6.441946983337402,
+  "confidence": 0.8960688710212708,
+  "address": "The Garnet, Km 14 Lekki Epe Expressway, Lekki - Epe Express Road, Lekki Penninsula II 101245, Lekki"
+ },
+ {
+  "name": "Emcel Properties Limited",
+  "category": "property_management",
+  "lng": 3.5412991046905518,
+  "lat": 6.443982124328613,
+  "confidence": 0.8073194622993469,
+  "address": "19 Lekki-Epe Expy"
+ },
+ {
+  "name": "Quincybliss realtors and co",
+  "category": "real_estate_agent",
+  "lng": 3.603515625,
+  "lat": 6.459280490875244,
+  "confidence": 0.7273069024085999,
+  "address": "84, Town Square Shopping Mall, CMD Road, Opposite Magodo Brooks North Gate"
+ },
+ {
+  "name": "Shaffykay & Co. Properties Limited",
+  "category": "property_management",
+  "lng": 4.099999904632568,
+  "lat": 6.416669845581055,
+  "confidence": 0.8051270246505737,
+  "address": "C-3 Princess & Angel shopping mall Alasia opp LBS Ajah "
+ },
+ {
+  "name": "Jedmoon Impex Limited",
+  "category": "property_management",
+  "lng": 4.087349891662598,
+  "lat": 6.412569999694824,
+  "confidence": 0.8948553800582886,
+  "address": "Jedmoon Garden Lekki Lagos"
+ },
+ {
+  "name": "Banksome Global Realtors",
+  "category": "property_management",
+  "lng": 4.087349891662598,
+  "lat": 6.412569999694824,
+  "confidence": 0.7801445722579956,
+  "address": "27B Providence Street"
+ },
+ {
+  "name": "Bloomfontane invest",
+  "category": "property_management",
+  "lng": 4.090031623840332,
+  "lat": 6.415990829467773,
+  "confidence": 0.7098133563995361,
+  "address": "Lekki phase 1"
+ },
+ {
+  "name": "Jays Blueprint Tech",
+  "category": "real_estate_agent",
+  "lng": 3.3922595977783203,
+  "lat": 6.5445098876953125,
+  "confidence": 0.7015427947044373,
+  "address": "5, Otigba, Computer Village, Ikeja"
+ },
+ {
+  "name": "Chi Ltd Ajao Estate.",
+  "category": "real_estate_agent",
+  "lng": 3.322169303894043,
+  "lat": 6.542369842529297,
+  "confidence": 0.7041105628013611,
+  "address": "Number 14, Chivita Avene"
+ },
+ {
+  "name": "Kotoye Kolawole Consulting",
+  "category": "property_management",
+  "lng": 3.3784399032592773,
+  "lat": 6.495419979095459,
+  "confidence": 0.7109808325767517,
+  "address": "290 Borno Way"
+ },
+ {
+  "name": "abiola oke & associates",
+  "category": "real_estate_agent",
+  "lng": 3.3385095596313477,
+  "lat": 6.4949798583984375,
+  "confidence": 0.7071898579597473,
+  "address": "CLEGG STREET Ojuelegba Lagos, Nigeria"
+ },
+ {
+  "name": "Come Homes & Properties Ltd - Land Sales company in Lagos, Nigeria",
+  "category": "real_estate_agent",
+  "lng": 3.354435443878174,
+  "lat": 6.490115165710449,
+  "confidence": 0.85,
+  "address": "17, Bode Thomas Street"
+ },
+ {
+  "name": "GreenKey Facility Management Services Ltd",
+  "category": "property_management",
+  "lng": 3.382340669631958,
+  "lat": 6.473523139953613,
+  "confidence": 0.7170063257217407,
+  "address": "17 Victoria St"
+ },
+ {
+  "name": "Sea-Pebble Concept LTD.",
+  "category": "real_estate_agent",
+  "lng": 3.3880295753479004,
+  "lat": 6.461019992828369,
+  "confidence": 0.7682185173034668,
+  "address": "40 Docemo St"
+ },
+ {
+  "name": "First Bridgeford Homes",
+  "category": "property_management",
+  "lng": 3.421259641647339,
+  "lat": 6.46382999420166,
+  "confidence": 0.7660592794418335,
+  "address": "Plot 1, Block 80, Itumo Ogbonna Road"
+ },
+ {
+  "name": "Hamborg Properties",
+  "category": "real_estate_agent",
+  "lng": 3.556830644607544,
+  "lat": 6.462574481964111,
+  "confidence": 0.85,
+  "address": "KM 48, LEKKI-EPE EXPRESSWAY"
+ },
+ {
+  "name": "Real Estate Investment",
+  "category": "real_estate_agent",
+  "lng": 3.6333296298980713,
+  "lat": 6.466669082641602,
+  "confidence": 0.7129471898078918,
+  "address": "6, Ogbeni Street, THERA ANNEX, Off Lekki-Epe Expressway, Beside Golden Park Estate, Ogidan,"
+ },
+ {
+  "name": "AJAH Peninsula Properties",
+  "category": "real_estate_agent",
+  "lng": 3.580794334411621,
+  "lat": 6.470022678375244,
+  "confidence": 0.7830873727798462,
+  "address": "Puri Mall Building, Oppoite Leawood Hotel"
+ },
+ {
+  "name": "Lekki Properties",
+  "category": "property_management",
+  "lng": 3.6047115325927734,
+  "lat": 6.474043369293213,
+  "confidence": 0.8638321161270142,
+  "address": "Km 24 Richland Mall Beside LBS Sangotedo Ajah Lagos "
+ },
+ {
+  "name": "Land for sale in Ogun State",
+  "category": "real_estate_agent",
+  "lng": 3.2773516178131104,
+  "lat": 6.5554728507995605,
+  "confidence": 0.85,
+  "address": "Liasu Road"
+ },
+ {
+  "name": "Homeland Assets Management Company Limited",
+  "category": "property_management",
+  "lng": 3.3613009452819824,
+  "lat": 6.548429012298584,
+  "confidence": 0.8277580738067627,
+  "address": "15 Taiwo Koya St"
+ },
+ {
+  "name": "Naija Property Market",
+  "category": "real_estate_agent",
+  "lng": 3.2570414543151855,
+  "lat": 6.572244167327881,
+  "confidence": 0.85,
+  "address": "Suite B2, Idimu Shopping Complex, Council B/Stop"
+ },
+ {
+  "name": "Egusto Properties Ltd",
+  "category": "property_management",
+  "lng": 3.2761199474334717,
+  "lat": 6.576779842376709,
+  "confidence": 0.7373458743095398,
+  "address": "2 Lasu Rd"
+ },
+ {
+  "name": "Imma Onoreya",
+  "category": "real_estate_agent",
+  "lng": 3.303658962249756,
+  "lat": 6.570277690887451,
+  "confidence": 0.739861786365509,
+  "address": "8 Ejigbo Rd"
+ },
+ {
+  "name": "Tedrix Property",
+  "category": "real_estate_agent",
+  "lng": 3.3676199913024902,
+  "lat": 6.5713791847229,
+  "confidence": 0.7244880199432373,
+  "address": "Moye road Opposite Holmart college, Odogunyan Ikorodu"
+ },
+ {
+  "name": "Dealclinchers Realtors",
+  "category": "real_estate_agent",
+  "lng": 3.3918089866638184,
+  "lat": 6.574673175811768,
+  "confidence": 0.8443630337715149,
+  "address": "4B Ogudu Rd"
+ },
+ {
+  "name": "Tat assets",
+  "category": "real_estate_agent",
+  "lng": 3.369361162185669,
+  "lat": 6.577506065368652,
+  "confidence": 0.7620133757591248,
+  "address": "11 Ibeju Lekki St"
+ },
+ {
+  "name": "KingBuilder Marketing Management",
+  "category": "property_management",
+  "lng": 3.3440356254577637,
+  "lat": 6.635888576507568,
+  "confidence": 0.8973543047904968,
+  "address": "6 Yaya Abatan St"
+ },
+ {
+  "name": "Adron Homes & Properties Limited",
+  "category": "real_estate_agent",
+  "lng": 3.3638999462127686,
+  "lat": 6.632750034332275,
+  "confidence": 0.85,
+  "address": "Adron Court, 75, Adeyemo Akapo Street, Omole Phase1"
+ },
+ {
+  "name": "Propertymart Real Estate Investment Limited",
+  "category": "real_estate_agent",
+  "lng": 3.3723692893981934,
+  "lat": 6.617472171783447,
+  "confidence": 0.85,
+  "address": "1a, Dipo Awolesi Street"
+ },
+ {
+  "name": "Tibod Properties",
+  "category": "real_estate_agent",
+  "lng": 3.3717799186706543,
+  "lat": 6.616529941558838,
+  "confidence": 0.7469328045845032,
+  "address": "343 Borno Way"
+ },
+ {
+  "name": "Dapo Okeowo and Company",
+  "category": "real_estate_agent",
+  "lng": 3.373900890350342,
+  "lat": 6.615769863128662,
+  "confidence": 0.7236737608909607,
+  "address": "26 Mabinuori St"
+ },
+ {
+  "name": "Grace property Ikorodu",
+  "category": "real_estate_agent",
+  "lng": 3.5027730464935303,
+  "lat": 6.617769241333008,
+  "confidence": 0.7741481065750122,
+  "address": "77 Ikorodu Rd"
+ },
+ {
+  "name": "SAMMY Realtors Consulting",
+  "category": "real_estate_agent",
+  "lng": 3.509999990463257,
+  "lat": 6.611199855804443,
+  "confidence": 0.7086767554283142,
+  "address": "Suite 30, Jesus Pavilion Plaza, Opposite Epic Event Centre, Cele bus stop, Ijede road"
+ },
+ {
+  "name": "Fommeg Properties",
+  "category": "real_estate_agent",
+  "lng": 3.263089179992676,
+  "lat": 6.61153507232666,
+  "confidence": 0.7440181374549866,
+  "address": "NOS. 1, Pastor Abisoye Close, Palmbay Estate, Shina Ekundayo Avenue, Labora-Owode, ABIJO,"
+ },
+ {
+  "name": "Yinka Makinde & Co",
+  "category": "real_estate_agent",
+  "lng": 3.296004056930542,
+  "lat": 6.603869915008545,
+  "confidence": 0.7242927551269531,
+  "address": "3 Olaniyi Street, Orelope bus stop"
+ },
+ {
+  "name": "Hillsong Estates Nigeria",
+  "category": "real_estate_agent",
+  "lng": 3.3176136016845703,
+  "lat": 6.6065263748168945,
+  "confidence": 0.7761420011520386,
+  "address": "39 Shasha Road, Moshalashi Busstop Egbeda Lagos."
+ },
+ {
+  "name": "Samuel Oloyede and Partners",
+  "category": "real_estate_agent",
+  "lng": 3.3537542819976807,
+  "lat": 6.6048431396484375,
+  "confidence": 0.7137531638145447,
+  "address": "9 Allen Ave"
+ },
+ {
+  "name": "Babalola A. Adeniyi & Co.",
+  "category": "real_estate_agent",
+  "lng": 3.352198600769043,
+  "lat": 6.6015944480896,
+  "confidence": 0.8656017780303955,
+  "address": "9 Allen Ave"
+ },
+ {
+  "name": "Prolific Highrise Company Ltd.",
+  "category": "property_management",
+  "lng": 3.3427999019622803,
+  "lat": 6.598499774932861,
+  "confidence": 0.7144890427589417,
+  "address": "12 Wole Ogunjimi St"
+ },
+ {
+  "name": "Richlife Commercial & Logistics Limited",
+  "category": "property_management",
+  "lng": 3.3356499671936035,
+  "lat": 6.599209785461426,
+  "confidence": 0.7043254375457764,
+  "address": "3 Balogun St"
+ },
+ {
+  "name": "Boundless Multi-services Solution Nigeria Ltd.",
+  "category": "property_management",
+  "lng": 3.3002631664276123,
+  "lat": 6.6001410484313965,
+  "confidence": 0.8628902435302734,
+  "address": "1 Akowonjo Rd"
+ },
+ {
+  "name": "Kropt Properties",
+  "category": "property_management",
+  "lng": 3.34000301361084,
+  "lat": 6.594498157501221,
+  "confidence": 0.7508543133735657,
+  "address": "Computer Village"
+ },
+ {
+  "name": "Property Question Nigeria",
+  "category": "property_management",
+  "lng": 3.3407864570617676,
+  "lat": 6.596059799194336,
+  "confidence": 0.85,
+  "address": "29/31, Obademi Awolowo Way"
+ },
+ {
+  "name": "Intermontane Property Management and Consultancy",
+  "category": "property_management",
+  "lng": 3.358157157897949,
+  "lat": 6.593027591705322,
+  "confidence": 0.8742329478263855,
+  "address": "30 Opebi Rd"
+ },
+ {
+  "name": "Oparah Realty",
+  "category": "real_estate_agent",
+  "lng": 3.3553237915039062,
+  "lat": 6.59283447265625,
+  "confidence": 0.85,
+  "address": "No 16A, Sule Abuka Close off Opebi Road by GTBank"
+ },
+ {
+  "name": "Pakelly Expert",
+  "category": "real_estate_agent",
+  "lng": 3.3911895751953125,
+  "lat": 6.6021037101745605,
+  "confidence": 0.7646235227584839,
+  "address": "Iyana School, 2 Orishigun St, opposite The Apostolic Grammar Ketu"
+ },
+ {
+  "name": "KingMaker Homes",
+  "category": "real_estate_agent",
+  "lng": 3.9509172439575195,
+  "lat": 6.585721969604492,
+  "confidence": 0.7720475196838379,
+  "address": "41 Lekki-Epe Expy"
+ },
+ {
+  "name": "Nazera Limited",
+  "category": "real_estate_agent",
+  "lng": 3.5300445556640625,
+  "lat": 6.5775580406188965,
+  "confidence": 0.7438409924507141,
+  "address": "Arabian Shopping Complex, Ogombo Ajah Lagos Nigeria."
+ },
+ {
+  "name": "Great Ibikunle Integrated Property",
+  "category": "real_estate_agent",
+  "lng": 3.2333295345306396,
+  "lat": 6.699999809265137,
+  "confidence": 0.7599784135818481,
+  "address": "Mount Zion Shopping Complex, 72, Idiroko Road, Beside Soyendo Filling Station, Close to Wema Bank Plc,"
+ },
+ {
+  "name": "MAKO MULTI Ventures",
+  "category": "real_estate_agent",
+  "lng": 3.2636098861694336,
+  "lat": 6.686939239501953,
+  "confidence": 0.8199042081832886,
+  "address": "Klm 40, Owode Idiroko Road, Ajegunle. Ogun State Ipokia local Government.  "
+ },
+ {
+  "name": "Leamich Nigeria",
+  "category": "property_management",
+  "lng": 3.308469533920288,
+  "lat": 6.661369800567627,
+  "confidence": 0.7061166763305664,
+  "address": "53 Olaniyi St"
+ },
+ {
+  "name": "Piedras Properties and Investment Limited",
+  "category": "property_management",
+  "lng": 3.323309898376465,
+  "lat": 6.648349761962891,
+  "confidence": 0.8670660853385925,
+  "address": "85 Iju Rd"
+ },
+ {
+  "name": "BlessedT Properties",
+  "category": "real_estate_agent",
+  "lng": 3.3298072814941406,
+  "lat": 6.644136905670166,
+  "confidence": 0.85,
+  "address": "1 ade-adesanya street,aguda surulere"
+ },
+ {
+  "name": "Sabre Works Real Estate Investment Ltd",
+  "category": "real_estate_agent",
+  "lng": 3.3776352405548096,
+  "lat": 6.644145488739014,
+  "confidence": 0.7836509943008423,
+  "address": "32 Ogudu Rd"
+ }
+]

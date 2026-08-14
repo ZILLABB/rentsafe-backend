@@ -9,6 +9,7 @@ What this imports, and why it's allowed to:
 
   LGAs, neighbourhoods, transit   OpenStreetMap via Overpass    ODbL 1.0
   Named residential buildings     OpenStreetMap via Overpass    ODbL 1.0
+  Estate agent listings           Overture Places (Meta et al)  CDLA Permissive 2.0
   Ground elevation                Open-Elevation (SRTM)         public domain
   Flood banding                   derived from elevation        NIHSA thresholds
 
@@ -39,6 +40,7 @@ import argparse
 import asyncio
 import datetime as dt
 import logging
+import re
 import sys
 from pathlib import Path
 
@@ -52,6 +54,7 @@ from app.api.v1.places import MAX_AREA_DISTANCE_M
 from app.config import get_settings
 from app.db.models import (
     LGA,
+    Agent,
     DataSource,
     Neighbourhood,
     Property,
@@ -59,6 +62,7 @@ from app.db.models import (
 )
 from app.db.session import SessionLocal
 from app.services import identity, opendata
+from app.services.opendata import OVERTURE
 
 settings = get_settings()
 
@@ -272,6 +276,92 @@ async def import_properties(
     return added
 
 
+def _agent_slug(name: str, taken: set[str]) -> str:
+    """A URL-safe, stable slug. The agent page is addressed by it."""
+    base = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")[:60] or "agent"
+    slug = base
+    n = 1
+    while slug in taken:
+        n += 1
+        slug = f"{base}-{n}"
+    return slug
+
+
+async def import_agents(
+    session: AsyncSession, *, offline: bool, dry_run: bool
+) -> int:
+    """Import Lagos estate agents from Overture Places as unclaimed listings.
+
+    An agent profile is different in kind from a property: a building has no
+    reputation, and an agency's reputation is the thing this app rates. So the
+    bar is deliberately higher — only the two categories that actually describe
+    a letting business, only at high confidence, because a bank or a furniture
+    shop published as an estate agent is a false statement about a real firm.
+
+    What gets written is a *listing*, not a judgement: no rating, no reviews, no
+    LASRERA badge, not claimed. Everything the app displays about an agent still
+    comes from tenants, and the agent can take control through the claim flow.
+    """
+    rows = opendata.lagos_estate_agents(offline=offline)
+    log.info("Overture returned %d high-confidence Lagos agents", len(rows))
+
+    existing = (await session.execute(select(Agent))).scalars().all()
+    by_name = {(a.name_normalised or a.name.lower()) for a in existing}
+    taken = {a.slug for a in existing if a.slug}
+
+    areas = (
+        await session.execute(
+            select(Neighbourhood).where(Neighbourhood.centroid_lat.is_not(None))
+        )
+    ).scalars().all()
+
+    added = 0
+    for row in rows:
+        norm = row["name"].strip().lower()
+        if norm in by_name:
+            continue
+
+        # Which parts of Lagos they appear to operate in, from where they are.
+        operating = None
+        if areas and row.get("lat") is not None:
+            nearest = min(
+                areas,
+                key=lambda a: opendata.haversine_m(
+                    row["lat"], row["lng"], float(a.centroid_lat), float(a.centroid_lng)
+                ),
+            )
+            operating = [nearest.name]
+
+        slug = _agent_slug(row["name"], taken)
+        taken.add(slug)
+        by_name.add(norm)
+
+        if not dry_run:
+            session.add(
+                Agent(
+                    name=row["name"].strip(),
+                    name_normalised=norm,
+                    slug=slug,
+                    operating_areas=operating,
+                    # Never set from an import. The badge means somebody checked
+                    # the number against the LASRERA register, and nobody has.
+                    lasrera_verified=False,
+                    # Nobody has claimed it; the claim flow is how that changes.
+                    profile_claimed=False,
+                    total_reviews=0,
+                )
+            )
+            await _record(session, "agent", slug, "name", OVERTURE)
+            await _record(session, "agent", slug, "location", OVERTURE)
+        added += 1
+
+    log.info(
+        "  added %d unclaimed agent listings with no rating and no LASRERA badge",
+        added,
+    )
+    return added
+
+
 async def import_elevation(
     session: AsyncSession, *, offline: bool, dry_run: bool
 ) -> int:
@@ -365,7 +455,7 @@ async def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--what",
-        choices=["all", "lgas", "areas", "properties", "elevation", "transit"],
+        choices=["all", "lgas", "areas", "properties", "agents", "elevation", "transit"],
         default="all",
     )
     ap.add_argument(
@@ -396,6 +486,10 @@ async def main() -> None:
             await import_properties(
                 session, offline=args.offline, dry_run=args.dry_run
             )
+
+        if args.what in ("all", "agents"):
+            log.info("\n== Estate agents (Overture Places, CDLA Permissive 2.0) ==")
+            await import_agents(session, offline=args.offline, dry_run=args.dry_run)
 
         if args.what in ("all", "elevation"):
             log.info("\n== Elevation & flood banding (SRTM, public domain) ==")
