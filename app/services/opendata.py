@@ -394,7 +394,11 @@ async def geocode_async(
     async def fetch() -> list[dict]:
         # Wait for our slot on the loop rather than sleeping through it.
         await _nominatim_limiter.acquire()
-        logger.info("Nominatim search %r", term)
+        # The term is a user's typed home address. Logged by length only —
+        # enough to see that a lookup happened and roughly how specific it was,
+        # without writing where somebody lives into a file that gets shipped to
+        # a log aggregator and kept for months.
+        logger.info("Nominatim search (%d chars)", len(term))
         async with httpx.AsyncClient(
             timeout=30, headers={"User-Agent": USER_AGENT}
         ) as c:
@@ -590,7 +594,11 @@ def geocode(query: str, *, limit: int = 6, offline: bool = False) -> list[dict]:
         return []
 
     def fetch() -> list[dict]:
-        logger.info("Nominatim search %r", term)
+        # The term is a user's typed home address. Logged by length only —
+        # enough to see that a lookup happened and roughly how specific it was,
+        # without writing where somebody lives into a file that gets shipped to
+        # a log aggregator and kept for months.
+        logger.info("Nominatim search (%d chars)", len(term))
         with httpx.Client(timeout=30, headers={"User-Agent": USER_AGENT}) as c:
             r = c.get(NOMINATIM_URL, params=_geocode_params(term, limit))
             r.raise_for_status()
