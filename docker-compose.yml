@@ -37,7 +37,7 @@ services:
       retries: 10
 
   api:
-    build: ./backend
+    build: .
     depends_on:
       db: {condition: service_healthy}
       redis: {condition: service_healthy}
@@ -55,7 +55,7 @@ services:
       # Without this the app refuses to boot, which is the point: no SMS means
       # no sign-in. Set a real Termii key to exercise delivery.
       TERMII_API_KEY: "${TERMII_API_KEY:-dev-placeholder}"
-    ports: ["8001:8000"]
+    ports: ["8000:8000"]
     volumes:
       # Media on a container filesystem is lost on redeploy. A named volume is
       # the local stand-in for the object storage production needs.

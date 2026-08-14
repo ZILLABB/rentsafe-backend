@@ -68,7 +68,7 @@ python -m scripts.import_reference_data --what all --offline   # cache only
 | Ground elevation | Open-Elevation (SRTM) | public domain |
 | Flood banding | derived from elevation | NIHSA coastal-lowland thresholds |
 
-Responses are cached under `backend/data/cache/`, so imports are reproducible
+Responses are cached under `data/cache/`, so imports are reproducible
 and CI never needs network. Every imported field records its origin in
 `data_sources` and is surfaced on the property page — partly because a
 transparency product should show its working, and partly because ODbL requires
@@ -131,7 +131,7 @@ Stated plainly so nothing on screen implies otherwise:
 
 ## Deploying
 
-Local dev needs no configuration. Production does — see `backend/.env.example`.
+Local dev needs no configuration. Production does — see `.env.example`.
 The app refuses to start with `ENVIRONMENT=production` if `DEBUG` is still true
 or either secret is a placeholder, so a misconfigured deploy fails loudly at
 boot rather than quietly leaking OTP codes.

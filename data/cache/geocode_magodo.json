@@ -1,0 +1,33 @@
+[
+ {
+  "place_id": 40668590,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 1484920806,
+  "lat": "6.6180809",
+  "lon": "3.3777821",
+  "category": "place",
+  "type": "suburb",
+  "place_rank": 19,
+  "importance": 0.14670666742961772,
+  "addresstype": "suburb",
+  "name": "Magodo",
+  "display_name": "Magodo, Shangisha, Kosofe, Lagos, 100248, Nigeria",
+  "address": {
+   "suburb": "Magodo",
+   "village": "Shangisha",
+   "county": "Kosofe",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "100248",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.5980809",
+   "6.6380809",
+   "3.3577821",
+   "3.3977821"
+  ]
+ }
+]

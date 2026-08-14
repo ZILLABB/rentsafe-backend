@@ -1,0 +1,64 @@
+[
+ {
+  "place_id": 40550550,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 135920074,
+  "lat": "6.6339420",
+  "lon": "3.3330556",
+  "category": "highway",
+  "type": "residential",
+  "place_rank": 26,
+  "importance": 0.05337333409628439,
+  "addresstype": "road",
+  "name": "Salako Street",
+  "display_name": "Salako Street, Ogba, Ifako/Ijaye, Lagos, 100216, Nigeria",
+  "address": {
+   "road": "Salako Street",
+   "suburb": "Ogba",
+   "county": "Ifako/Ijaye",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "100216",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.6338027",
+   "6.6341232",
+   "3.3323727",
+   "3.3337282"
+  ]
+ },
+ {
+  "place_id": 40577532,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 13656350,
+  "lat": "6.6577860",
+  "lon": "3.3347618",
+  "category": "highway",
+  "type": "residential",
+  "place_rank": 26,
+  "importance": 0.05337333409628439,
+  "addresstype": "road",
+  "name": "Salako Street",
+  "display_name": "Salako Street, Fagba, Lagos, Ifako/Ijaye, Lagos, 100216, Nigeria",
+  "address": {
+   "road": "Salako Street",
+   "residential": "Fagba, Lagos",
+   "county": "Ifako/Ijaye",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "postcode": "100216",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.6569099",
+   "6.6586518",
+   "3.3345799",
+   "3.3348187"
+  ]
+ }
+]

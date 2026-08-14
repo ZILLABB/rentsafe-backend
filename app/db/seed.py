@@ -457,7 +457,12 @@ async def seed_if_empty(session: AsyncSession) -> bool:
         company_name="Chidi Okonkwo Properties",
         operating_areas=["Lekki", "Ajah", "VI"],
         lasrera_verified=True,
-        profile_claimed=True,
+        # Not claimed: no real person owns this demo profile, and claiming it
+        # requires a phone_hash that the right-of-reply check authorises
+        # against. Seeding it as claimed with no owner made the profile say it
+        # was "managed by the agent" while nobody could reply as them — and
+        # blocked anyone from claiming it either.
+        profile_claimed=False,
         avg_rating_transparency=2.0,
         avg_rating_honesty=2.8,
         avg_rating_fee_fairness=2.2,
