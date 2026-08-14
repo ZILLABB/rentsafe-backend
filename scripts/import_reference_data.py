@@ -8,6 +8,7 @@
 What this imports, and why it's allowed to:
 
   LGAs, neighbourhoods, transit   OpenStreetMap via Overpass    ODbL 1.0
+  Named residential buildings     OpenStreetMap via Overpass    ODbL 1.0
   Ground elevation                Open-Elevation (SRTM)         public domain
   Flood banding                   derived from elevation        NIHSA thresholds
 
@@ -18,6 +19,8 @@ What it deliberately does NOT import:
              diverge — importing it would launder the distortion the product
              is trying to expose. Their terms also forbid scraping. Rent comes
              from tenant reports only.
+  Scores     An imported building has no rating, because nobody has rated it.
+             It renders as "-" until a tenant does.
   Reviews    First-party by definition. Sourcing opinions about landlords from
              elsewhere would be both defamation exposure and a lie about
              provenance.
@@ -45,6 +48,8 @@ import httpx
 from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.api.v1.places import MAX_AREA_DISTANCE_M
+from app.config import get_settings
 from app.db.models import (
     LGA,
     DataSource,
@@ -53,7 +58,9 @@ from app.db.models import (
     TransitOption,
 )
 from app.db.session import SessionLocal
-from app.services import opendata
+from app.services import identity, opendata
+
+settings = get_settings()
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 log = logging.getLogger("import")
@@ -179,6 +186,92 @@ async def import_neighbourhoods(
     return added
 
 
+async def import_properties(
+    session: AsyncSession, *, offline: bool, dry_run: bool
+) -> int:
+    """Import real, named Lagos residential buildings from OSM.
+
+    This is the only honest way to give the app property coverage before it has
+    users. A building's name and location are objective, openly licensed facts,
+    so importing them means a tenant searching for "Niger Towers" finds it and
+    can be its first reviewer — instead of hitting an empty database and
+    leaving.
+
+    Every imported property has **zero reviews** and therefore no score, no
+    rent and no flood history. That is the point. Seeding invented reviews would
+    destroy the one thing the product sells, and there is no open dataset of
+    real ones to import instead.
+    """
+    rows = opendata.lagos_residential_buildings(offline=offline)
+    log.info("OSM returned %d named Lagos residential features", len(rows))
+
+    areas = (
+        await session.execute(
+            select(Neighbourhood).where(Neighbourhood.centroid_lat.is_not(None))
+        )
+    ).scalars().all()
+    if not areas:
+        log.warning("  no neighbourhoods yet — run --what neighbourhoods first")
+        return 0
+
+    existing = (await session.execute(select(Property))).scalars().all()
+    known_points = [(float(p.lat), float(p.lng)) for p in existing]
+    known_names = {(p.address_local or "").strip().lower() for p in existing}
+
+    added = 0
+    for row in rows:
+        if row["name"].strip().lower() in known_names:
+            continue
+        # Don't re-import something a tenant already registered by hand at the
+        # same spot; the dedup radius is the same one the identity flow uses.
+        if any(
+            opendata.haversine_m(row["lat"], row["lng"], lat, lng)
+            <= settings.dedup_radius_m
+            for lat, lng in known_points
+        ):
+            continue
+
+        nearest = min(
+            areas,
+            key=lambda a: opendata.haversine_m(
+                row["lat"], row["lng"], float(a.centroid_lat), float(a.centroid_lng)
+            ),
+        )
+        distance = opendata.haversine_m(
+            row["lat"], row["lng"], float(nearest.centroid_lat), float(nearest.centroid_lng)
+        )
+        # Same ceiling the address search uses: past this, "nearest area" stops
+        # meaning anything and we would be filing a building under a suburb
+        # several kilometres away.
+        if distance > MAX_AREA_DISTANCE_M:
+            continue
+
+        if not dry_run:
+            pid = await identity.create_property(
+                session,
+                lat=row["lat"],
+                lng=row["lng"],
+                lga_code=nearest.lga_code or "LAG",
+                area_code=nearest.code,
+                address=row["name"],
+                # An estate name covers a whole compound rather than one block,
+                # so its coordinate is an area centroid and the map must say so.
+                location_approximate=row["is_area"],
+            )
+            await _record(session, "property", pid, "address_local", OSM)
+            await _record(session, "property", pid, "location", OSM)
+        added += 1
+        known_names.add(row["name"].strip().lower())
+        known_points.append((row["lat"], row["lng"]))
+
+    log.info(
+        "  added %d properties with no reviews, no rent and no scores — "
+        "those only ever come from tenants",
+        added,
+    )
+    return added
+
+
 async def import_elevation(
     session: AsyncSession, *, offline: bool, dry_run: bool
 ) -> int:
@@ -272,7 +365,7 @@ async def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--what",
-        choices=["all", "lgas", "areas", "elevation", "transit"],
+        choices=["all", "lgas", "areas", "properties", "elevation", "transit"],
         default="all",
     )
     ap.add_argument(
@@ -293,6 +386,14 @@ async def main() -> None:
         if args.what in ("all", "areas"):
             log.info("\n== Neighbourhoods (OpenStreetMap, ODbL) ==")
             await import_neighbourhoods(
+                session, offline=args.offline, dry_run=args.dry_run
+            )
+
+        # Properties before elevation, so newly imported buildings get their
+        # flood band in the same run rather than needing a second pass.
+        if args.what in ("all", "properties"):
+            log.info("\n== Residential buildings (OpenStreetMap, ODbL) ==")
+            await import_properties(
                 session, offline=args.offline, dry_run=args.dry_run
             )
 

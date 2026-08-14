@@ -1,0 +1,33 @@
+[
+ {
+  "place_id": 40606038,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 567150385,
+  "lat": "6.4513846",
+  "lon": "3.4416266",
+  "category": "landuse",
+  "type": "residential",
+  "place_rank": 24,
+  "importance": 0.08006974059662772,
+  "addresstype": "residential",
+  "name": "Niger Towers",
+  "display_name": "Niger Towers, 51/55, Lagos, Eti Osa, Lagos, Nigeria",
+  "address": {
+   "residential": "Niger Towers",
+   "house_number": "51/55",
+   "city": "Lagos",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4509236",
+   "6.4517778",
+   "3.4405863",
+   "3.4426596"
+  ]
+ }
+]

@@ -1,0 +1,3910 @@
+{
+ "version": 0.6,
+ "generator": "Overpass API 0.7.62.11 87bfad18",
+ "osm3s": {
+  "timestamp_osm_base": "2026-08-14T20:04:51Z",
+  "timestamp_areas_base": "2026-08-13T22:37:06Z",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+ },
+ "elements": [
+  {
+   "type": "node",
+   "id": 501456724,
+   "lat": 6.6058999,
+   "lon": 3.4287753,
+   "tags": {
+    "GNS:dsg_code": "PPL",
+    "GNS:dsg_string": "populated place",
+    "GNS:id": "-2021829",
+    "fixme": "no population estimate available, defaulted to village",
+    "is_in:country": "Nigeria",
+    "name": "Odogun",
+    "place": "neighbourhood",
+    "source": "GNS"
+   }
+  },
+  {
+   "type": "node",
+   "id": 5485534155,
+   "lat": 6.4644559,
+   "lon": 3.5524253,
+   "tags": {
+    "name": "Victoria Garden City",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 7218320128,
+   "lat": 6.6173622,
+   "lon": 3.3975281,
+   "tags": {
+    "name": "Agiliti",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 7633424022,
+   "lat": 6.3879241,
+   "lon": 2.7107263,
+   "tags": {
+    "name": "Adougbé Gbago",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13172237689,
+   "lat": 6.557441,
+   "lon": 3.3289611,
+   "tags": {
+    "name": "Mafoluku",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13240049114,
+   "lat": 6.6085499,
+   "lon": 3.4148861,
+   "tags": {
+    "name": "Owode Onirin",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13615594756,
+   "lat": 6.5457713,
+   "lon": 3.3234792,
+   "tags": {
+    "name": "Ajao Estate",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13943393312,
+   "lat": 6.4748063,
+   "lon": 3.1905347,
+   "tags": {
+    "name": "Okokomaiko",
+    "place": "neighbourhood",
+    "wikidata": "Q20707589",
+    "wikipedia": "en:Okokomaiko"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13943621146,
+   "lat": 6.4687629,
+   "lon": 3.18017,
+   "tags": {
+    "name": "Kemberi",
+    "place": "neighbourhood",
+    "wikidata": "Q94751059"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13943621149,
+   "lat": 6.4568232,
+   "lon": 3.1689779,
+   "tags": {
+    "name": "Sabo Oniba",
+    "place": "neighbourhood",
+    "wikidata": "Q94751048"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13943621160,
+   "lat": 6.4611959,
+   "lon": 3.1494756,
+   "tags": {
+    "name": "Shibiri",
+    "place": "neighbourhood",
+    "wikidata": "Q24232826",
+    "wikipedia": "en:Shibiri"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13943674507,
+   "lat": 6.4522655,
+   "lon": 3.1351834,
+   "tags": {
+    "name": "Etegbin",
+    "place": "neighbourhood",
+    "wikidata": "Q94751052"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13943699530,
+   "lat": 6.4650788,
+   "lon": 3.1570408,
+   "tags": {
+    "name": "Ilogbo Elegba",
+    "place": "neighbourhood",
+    "wikidata": "Q20707599",
+    "wikipedia": "en:Ilogbo Elegba"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13943709265,
+   "lat": 6.4449691,
+   "lon": 3.1359401,
+   "tags": {
+    "name": "Egan",
+    "place": "neighbourhood",
+    "wikidata": "Q94751049"
+   }
+  },
+  {
+   "type": "node",
+   "id": 14056882944,
+   "lat": 6.3820996,
+   "lon": 2.7223875,
+   "tags": {
+    "name": "Seme Border",
+    "place": "neighbourhood",
+    "wikidata": "Q15043617",
+    "wikipedia": "en:Seme Border"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273317,
+   "center": {
+    "lat": 6.4452972,
+    "lon": 3.5332105
+   },
+   "tags": {
+    "building": "house",
+    "name": "28",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273331,
+   "center": {
+    "lat": 6.4462164,
+    "lon": 3.5329635
+   },
+   "tags": {
+    "building": "house",
+    "name": "42",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273335,
+   "center": {
+    "lat": 6.4452863,
+    "lon": 3.5337474
+   },
+   "tags": {
+    "building": "house",
+    "name": "30"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273339,
+   "center": {
+    "lat": 6.4459196,
+    "lon": 3.5335032
+   },
+   "tags": {
+    "building": "house",
+    "name": "39",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273342,
+   "center": {
+    "lat": 6.4455789,
+    "lon": 3.5334927
+   },
+   "tags": {
+    "building": "house",
+    "name": "34",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273348,
+   "center": {
+    "lat": 6.4455745,
+    "lon": 3.5326897
+   },
+   "tags": {
+    "building": "house",
+    "name": "31",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273354,
+   "center": {
+    "lat": 6.4446582,
+    "lon": 3.5337505
+   },
+   "tags": {
+    "building": "house",
+    "name": "18",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273357,
+   "center": {
+    "lat": 6.4446647,
+    "lon": 3.5326759
+   },
+   "tags": {
+    "building": "house",
+    "name": "14",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273367,
+   "center": {
+    "lat": 6.4459155,
+    "lon": 3.5337686
+   },
+   "tags": {
+    "building": "house",
+    "name": "40",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273372,
+   "center": {
+    "lat": 6.4446585,
+    "lon": 3.5334805
+   },
+   "tags": {
+    "building": "house",
+    "name": "17",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273379,
+   "center": {
+    "lat": 6.4452948,
+    "lon": 3.5326863
+   },
+   "tags": {
+    "building": "house",
+    "name": "26",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273384,
+   "center": {
+    "lat": 6.4459196,
+    "lon": 3.5332393
+   },
+   "tags": {
+    "building": "house",
+    "name": "38",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273386,
+   "center": {
+    "lat": 6.445581,
+    "lon": 3.5337489
+   },
+   "tags": {
+    "building": "house",
+    "name": "35",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273394,
+   "center": {
+    "lat": 6.445611,
+    "lon": 3.5345011
+   },
+   "tags": {
+    "building": "house",
+    "name": "60/61",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273399,
+   "center": {
+    "lat": 6.4462172,
+    "lon": 3.5326883
+   },
+   "tags": {
+    "building": "house",
+    "name": "41",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273407,
+   "center": {
+    "lat": 6.4446639,
+    "lon": 3.5329465
+   },
+   "tags": {
+    "building": "house",
+    "name": "15",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273412,
+   "center": {
+    "lat": 6.4446567,
+    "lon": 3.5332117
+   },
+   "tags": {
+    "building": "house",
+    "name": "16",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273415,
+   "center": {
+    "lat": 6.4452994,
+    "lon": 3.532947
+   },
+   "tags": {
+    "building": "house",
+    "name": "27",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273425,
+   "center": {
+    "lat": 6.4462168,
+    "lon": 3.533506
+   },
+   "tags": {
+    "building": "house",
+    "name": "44",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273448,
+   "center": {
+    "lat": 6.4459245,
+    "lon": 3.5327004
+   },
+   "tags": {
+    "building": "house",
+    "name": "36",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273449,
+   "center": {
+    "lat": 6.4449663,
+    "lon": 3.5329391
+   },
+   "tags": {
+    "building": "house",
+    "name": "22",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273460,
+   "center": {
+    "lat": 6.4452988,
+    "lon": 3.5334739
+   },
+   "tags": {
+    "building": "house",
+    "name": "29",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273463,
+   "center": {
+    "lat": 6.4462032,
+    "lon": 3.5337521
+   },
+   "tags": {
+    "building": "house",
+    "name": "45",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273477,
+   "center": {
+    "lat": 6.4455734,
+    "lon": 3.5329647
+   },
+   "tags": {
+    "building": "house",
+    "name": "32",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273505,
+   "center": {
+    "lat": 6.4462122,
+    "lon": 3.5332419
+   },
+   "tags": {
+    "building": "house",
+    "name": "43",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273511,
+   "center": {
+    "lat": 6.4449662,
+    "lon": 3.532675
+   },
+   "tags": {
+    "building": "house",
+    "name": "21",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 88273513,
+   "center": {
+    "lat": 6.4459237,
+    "lon": 3.5329609
+   },
+   "tags": {
+    "building": "house",
+    "name": "37",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 172235014,
+   "center": {
+    "lat": 6.4459815,
+    "lon": 3.5352964
+   },
+   "tags": {
+    "building": "house",
+    "name": "82/83",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 172235022,
+   "center": {
+    "lat": 6.4463323,
+    "lon": 3.5352945
+   },
+   "tags": {
+    "building": "house",
+    "name": "76/77",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 172235031,
+   "center": {
+    "lat": 6.4463291,
+    "lon": 3.5359754
+   },
+   "tags": {
+    "building": "house",
+    "name": "80/81",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 172235037,
+   "center": {
+    "lat": 6.4459801,
+    "lon": 3.5356477
+   },
+   "tags": {
+    "building": "house",
+    "name": "84/85",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 172235040,
+   "center": {
+    "lat": 6.4459771,
+    "lon": 3.5359824
+   },
+   "tags": {
+    "building": "house",
+    "name": "86/87",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 172235049,
+   "center": {
+    "lat": 6.4463291,
+    "lon": 3.5356397
+   },
+   "tags": {
+    "building": "house",
+    "name": "78/79",
+    "source": "Bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 314471913,
+   "center": {
+    "lat": 6.4463722,
+    "lon": 3.5364192
+   },
+   "tags": {
+    "building": "house",
+    "name": "122/123/124"
+   }
+  },
+  {
+   "type": "way",
+   "id": 314471914,
+   "center": {
+    "lat": 6.4463685,
+    "lon": 3.5367397
+   },
+   "tags": {
+    "building": "house",
+    "name": "125/126/127"
+   }
+  },
+  {
+   "type": "way",
+   "id": 314471922,
+   "center": {
+    "lat": 6.4446088,
+    "lon": 3.5349351
+   },
+   "tags": {
+    "building": "house",
+    "name": "20"
+   }
+  },
+  {
+   "type": "way",
+   "id": 314471923,
+   "center": {
+    "lat": 6.4445998,
+    "lon": 3.5346401
+   },
+   "tags": {
+    "building": "house",
+    "name": "19"
+   }
+  },
+  {
+   "type": "way",
+   "id": 316753431,
+   "center": {
+    "lat": 6.4524561,
+    "lon": 3.5600037
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Ikota Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 362382931,
+   "center": {
+    "lat": 6.4908841,
+    "lon": 3.3864136
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "landuse": "residential",
+    "name": "Lagos State Development Property Council",
+    "residential": "gated",
+    "surface": "unpaved"
+   }
+  },
+  {
+   "type": "way",
+   "id": 450765169,
+   "center": {
+    "lat": 6.5233251,
+    "lon": 3.3831622
+   },
+   "tags": {
+    "addr:housenumber": "12",
+    "addr:street": "house road",
+    "building": "house",
+    "name": "house12"
+   }
+  },
+  {
+   "type": "way",
+   "id": 525198074,
+   "center": {
+    "lat": 6.4402394,
+    "lon": 3.4101727
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "12a",
+    "addr:street": "Walter Carrington Crescent",
+    "addr:suburb": "Victoria Island",
+    "building": "apartments",
+    "email": "info@theseattleresidences.com",
+    "height": "35",
+    "internet_access": "wlan",
+    "name": "Seattle Residences",
+    "opening_hours": "24/7",
+    "phone": "+234-902-0077771",
+    "website": "https://www.theseattleresidences.com/",
+    "wikidata": "Q113166899"
+   }
+  },
+  {
+   "type": "way",
+   "id": 544212508,
+   "center": {
+    "lat": 6.4572703,
+    "lon": 3.4850919
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Periwinkle",
+    "website": "https://periwinkleresidences.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150370,
+   "center": {
+    "lat": 6.4516863,
+    "lon": 3.4446263
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "3B",
+    "addr:street": "Ruxton Street",
+    "landuse": "residential",
+    "name": "Funai Courts"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150373,
+   "center": {
+    "lat": 6.4519177,
+    "lon": 3.4442237
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "4",
+    "addr:street": "Ruxton Street",
+    "landuse": "residential",
+    "name": "Clapton Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150376,
+   "center": {
+    "lat": 6.4515042,
+    "lon": 3.4438832
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "1",
+    "addr:street": "Milverton Road",
+    "landuse": "residential",
+    "name": "Olori Omo-Oba's Place"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150379,
+   "center": {
+    "lat": 6.4540974,
+    "lon": 3.4464577
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Nordic Villas"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150385,
+   "center": {
+    "lat": 6.4513507,
+    "lon": 3.441623
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "51/55",
+    "addr:street": "Glover Road",
+    "landuse": "residential",
+    "name": "Niger Towers"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150392,
+   "center": {
+    "lat": 6.4503694,
+    "lon": 3.4387059
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "1",
+    "addr:street": "Femi Okunnu Road",
+    "landuse": "residential",
+    "name": "1 Cooper Miramar Towers"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150397,
+   "center": {
+    "lat": 6.4541495,
+    "lon": 3.441327
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "21",
+    "addr:street": "Gerrard Road",
+    "landuse": "residential",
+    "name": "Titanium Towers"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150404,
+   "center": {
+    "lat": 6.4542138,
+    "lon": 3.4418353
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Miserere"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150420,
+   "center": {
+    "lat": 6.4532573,
+    "lon": 3.4299073
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "45",
+    "addr:street": "Alfred Rewane Road",
+    "landuse": "residential",
+    "name": "Tarino Tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150432,
+   "center": {
+    "lat": 6.4558433,
+    "lon": 3.4292412
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "26",
+    "addr:street": "Glover Road",
+    "landuse": "residential",
+    "name": "Regents Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150439,
+   "center": {
+    "lat": 6.4558557,
+    "lon": 3.4268629
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "13",
+    "addr:street": "Glover Road",
+    "landuse": "residential",
+    "name": "King's Court Apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567150444,
+   "center": {
+    "lat": 6.4560397,
+    "lon": 3.4263518
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "11",
+    "addr:street": "Glover Road",
+    "landuse": "residential",
+    "name": "Eagle Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567878615,
+   "center": {
+    "lat": 6.4635634,
+    "lon": 3.359019
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Orisunmibare Community"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567964203,
+   "center": {
+    "lat": 6.4479895,
+    "lon": 3.4427777
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "34",
+    "addr:street": "Bourdillon Road",
+    "landuse": "residential",
+    "name": "Euro Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567964340,
+   "center": {
+    "lat": 6.4468291,
+    "lon": 3.4401912
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "25",
+    "addr:street": "Bourdillon Road",
+    "description": "Luxury apartment complex with two buildings. Features gym, pool, recreation lounges.",
+    "landuse": "residential",
+    "name": "Tango Towers"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567964344,
+   "center": {
+    "lat": 6.4499122,
+    "lon": 3.44159
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "11",
+    "addr:street": "Femi Okunnu Road",
+    "landuse": "residential",
+    "name": "Ideal Height"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567964346,
+   "center": {
+    "lat": 6.4497539,
+    "lon": 3.4420676
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "13",
+    "addr:street": "Femi Okunnu Road",
+    "landuse": "residential",
+    "name": "The Ultimate Apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567964422,
+   "center": {
+    "lat": 6.4680488,
+    "lon": 3.4455381
+   },
+   "tags": {
+    "addr:street": "4th Avenue",
+    "landuse": "residential",
+    "name": "Bella Vista Apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 568364446,
+   "center": {
+    "lat": 6.440233,
+    "lon": 3.4101931
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "12A",
+    "addr:street": "Walter Carrington Crescent",
+    "landuse": "residential",
+    "name": "The Seattle Residences",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 568364459,
+   "center": {
+    "lat": 6.4557344,
+    "lon": 3.433022
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "22B",
+    "addr:street": "Lugard Avenue",
+    "landuse": "residential",
+    "name": "Colonel Adekunle Fayuji Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 568364510,
+   "center": {
+    "lat": 6.4238937,
+    "lon": 3.4403892
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Insim Twin Towers"
+   }
+  },
+  {
+   "type": "way",
+   "id": 568364511,
+   "center": {
+    "lat": 6.4243025,
+    "lon": 3.4395223
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "South Port Harbour"
+   }
+  },
+  {
+   "type": "way",
+   "id": 570496124,
+   "center": {
+    "lat": 6.4437209,
+    "lon": 3.4324074
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Lagoon View Garden"
+   }
+  },
+  {
+   "type": "way",
+   "id": 570496132,
+   "center": {
+    "lat": 6.4440596,
+    "lon": 3.4329005
+   },
+   "tags": {
+    "country": "GB",
+    "diplomatic": "embassy",
+    "embassy": "residence",
+    "landuse": "residential",
+    "name": "Residence of the British Deputy High Commissioner",
+    "office": "diplomatic",
+    "target": "NG"
+   }
+  },
+  {
+   "type": "way",
+   "id": 570496162,
+   "center": {
+    "lat": 6.4446705,
+    "lon": 3.4340243
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Bourdillon Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 570506191,
+   "center": {
+    "lat": 6.4470093,
+    "lon": 3.4382536
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "20",
+    "addr:street": "Lateef Jakande Avenue",
+    "landuse": "residential",
+    "name": "Ancestors Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 570559571,
+   "center": {
+    "lat": 6.4392222,
+    "lon": 3.4336819
+   },
+   "tags": {
+    "addr:street": "Federal Housing Complex Road",
+    "landuse": "residential",
+    "name": "1004 Estates"
+   }
+  },
+  {
+   "type": "way",
+   "id": 570559586,
+   "center": {
+    "lat": 6.4445598,
+    "lon": 3.5351508
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Chevron Nigeria Corporate Housing and Recreation Complex"
+   }
+  },
+  {
+   "type": "way",
+   "id": 570657196,
+   "center": {
+    "lat": 6.4329916,
+    "lon": 3.5348906
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Twin Lakes Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 570657218,
+   "center": {
+    "lat": 6.463172,
+    "lon": 3.4351898
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "56",
+    "addr:street": "Modupe Alakija Crescent",
+    "consulate": "residence",
+    "country": "US",
+    "diplomatic": "consulate",
+    "landuse": "residential",
+    "name": "Residence of the U.S. Consul General",
+    "name:fr": "Résidence du Consul US",
+    "office": "diplomatic",
+    "target": "NG"
+   }
+  },
+  {
+   "type": "way",
+   "id": 572205098,
+   "center": {
+    "lat": 6.5199687,
+    "lon": 3.3926
+   },
+   "tags": {
+    "description": "located opposite access bank off university road",
+    "landuse": "residential",
+    "name": "UNILAG New Hall",
+    "surface": "unpaved"
+   }
+  },
+  {
+   "type": "way",
+   "id": 591832837,
+   "center": {
+    "lat": 6.4382643,
+    "lon": 3.4395909
+   },
+   "tags": {
+    "addr:street": "Ozumba Mbadiwe Avenue",
+    "landuse": "residential",
+    "name": "Black Diamond Suites & Apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 593494008,
+   "center": {
+    "lat": 6.4365096,
+    "lon": 3.4230595
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Eko Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 593494097,
+   "center": {
+    "lat": 6.4495348,
+    "lon": 3.4305902
+   },
+   "tags": {
+    "addr:street": "Olawale Daodu Road",
+    "landuse": "residential",
+    "name": "Angelina Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 594300230,
+   "center": {
+    "lat": 6.5906027,
+    "lon": 3.6032669
+   },
+   "tags": {
+    "addr:city": "Ikorodu",
+    "addr:housenumber": "1",
+    "addr:street": "Ose Oluwa Street",
+    "building": "residential",
+    "height": "3",
+    "name": "Ose Oluwa House"
+   }
+  },
+  {
+   "type": "way",
+   "id": 594743292,
+   "center": {
+    "lat": 6.4433904,
+    "lon": 3.437824
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Oramanya Mansion"
+   }
+  },
+  {
+   "type": "way",
+   "id": 594763818,
+   "center": {
+    "lat": 6.435071,
+    "lon": 3.4147337
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "1",
+    "addr:street": "Anifowoshe Street",
+    "landuse": "residential",
+    "name": "Vita Tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 595620137,
+   "center": {
+    "lat": 6.4497573,
+    "lon": 3.4394633
+   },
+   "tags": {
+    "addr:street": "Probyn Close",
+    "landuse": "residential",
+    "name": "Bunu Sheriff Gardens"
+   }
+  },
+  {
+   "type": "way",
+   "id": 596634675,
+   "center": {
+    "lat": 6.5193874,
+    "lon": 3.3930612
+   },
+   "tags": {
+    "building": "dormitory",
+    "height": "17",
+    "name": "ALiyu Makama Bida Hostel"
+   }
+  },
+  {
+   "type": "way",
+   "id": 596634676,
+   "center": {
+    "lat": 6.5192452,
+    "lon": 3.3934999
+   },
+   "tags": {
+    "building": "dormitory",
+    "height": "18",
+    "name": "Eni Njoku Hall, UNILAG"
+   }
+  },
+  {
+   "type": "way",
+   "id": 597498797,
+   "center": {
+    "lat": 6.4401791,
+    "lon": 3.4346205
+   },
+   "tags": {
+    "addr:city": "Victoria Island",
+    "addr:housenumber": "Suite 418",
+    "addr:street": "Block B10 Crescent B",
+    "building": "apartments",
+    "height": "50",
+    "name": "TCA Gallery",
+    "opening_hours": "Tu-Su 11-5",
+    "operator": "The Children's Art Company",
+    "tourism": "gallery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 598412442,
+   "center": {
+    "lat": 6.4336349,
+    "lon": 3.4697513
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Mobolaji Johnson Place"
+   }
+  },
+  {
+   "type": "way",
+   "id": 599458869,
+   "center": {
+    "lat": 6.4093258,
+    "lon": 3.4102805
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Eko Pearl Towers",
+    "wikidata": "Q28406788",
+    "wikipedia": "en:Eko Pearl Towers"
+   }
+  },
+  {
+   "type": "way",
+   "id": 599933117,
+   "center": {
+    "lat": 6.4431996,
+    "lon": 3.4119244
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Awolowo Towers"
+   }
+  },
+  {
+   "type": "way",
+   "id": 604051531,
+   "center": {
+    "lat": 6.4664729,
+    "lon": 3.4448407
+   },
+   "tags": {
+    "addr:street": "1st Avenue",
+    "landuse": "residential",
+    "name": "Ocean Parade Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 604715897,
+   "center": {
+    "lat": 6.446357,
+    "lon": 3.4387719
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "21",
+    "addr:street": "Bourdillon Road",
+    "landuse": "residential",
+    "name": "Praises Palace"
+   }
+  },
+  {
+   "type": "way",
+   "id": 604715922,
+   "center": {
+    "lat": 6.446593,
+    "lon": 3.4394489
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "23A",
+    "addr:street": "Bourdillon Road",
+    "landuse": "residential",
+    "name": "A·A Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 608989050,
+   "center": {
+    "lat": 6.4425708,
+    "lon": 3.4248468
+   },
+   "tags": {
+    "addr:city": "Ikoyi",
+    "addr:housenumber": "11",
+    "addr:street": "Raymond Njoku Street",
+    "building": "house",
+    "name": "Matrixvtrack"
+   }
+  },
+  {
+   "type": "way",
+   "id": 625815391,
+   "center": {
+    "lat": 6.446187,
+    "lon": 3.4359225
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "10-14",
+    "addr:street": "Bourdillon Road",
+    "landuse": "residential",
+    "name": "Abebe Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 629564844,
+   "center": {
+    "lat": 6.4598267,
+    "lon": 3.5584133
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Eleganza Gardens"
+   }
+  },
+  {
+   "type": "way",
+   "id": 641988202,
+   "center": {
+    "lat": 6.4318182,
+    "lon": 3.4117713
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "6",
+    "addr:street": "Elsie Femi Pearse Street",
+    "landuse": "residential",
+    "name": "Eden Heights"
+   }
+  },
+  {
+   "type": "way",
+   "id": 641988216,
+   "center": {
+    "lat": 6.4232481,
+    "lon": 3.4284888
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Kuramo Beach Residences"
+   }
+  },
+  {
+   "type": "way",
+   "id": 643481429,
+   "center": {
+    "lat": 6.435735,
+    "lon": 3.4831347
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Treasure Gardens",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 686893805,
+   "center": {
+    "lat": 6.5578135,
+    "lon": 3.3402144
+   },
+   "tags": {
+    "addr:city": "Oshodi",
+    "addr:housenumber": "58",
+    "addr:street": "Mosaku Street",
+    "building": "house",
+    "building:levels": "0",
+    "name": "Mosaku house"
+   }
+  },
+  {
+   "type": "way",
+   "id": 688466362,
+   "center": {
+    "lat": 6.4363368,
+    "lon": 3.483955
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Primewaterview Gardens 1",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 732547183,
+   "center": {
+    "lat": 6.462833,
+    "lon": 3.6528688
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Fara Park Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 732547184,
+   "center": {
+    "lat": 6.4655606,
+    "lon": 3.6472825
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Crown Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 733604261,
+   "center": {
+    "lat": 6.6389902,
+    "lon": 3.3728472
+   },
+   "tags": {
+    "landuse": "residential",
+    "leisure": "horse_riding",
+    "name": "Ikeja Saddle Club",
+    "sport": "equestrian"
+   }
+  },
+  {
+   "type": "way",
+   "id": 738186686,
+   "center": {
+    "lat": 6.447468,
+    "lon": 3.4087229
+   },
+   "tags": {
+    "amenity": "police",
+    "landuse": "residential",
+    "name": "Police Barracks"
+   }
+  },
+  {
+   "type": "way",
+   "id": 740741862,
+   "center": {
+    "lat": 6.4459004,
+    "lon": 3.4053615
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "27",
+    "addr:street": "Boyle Street",
+    "architect": "John Godwin & Gillian Hopwood",
+    "building": "residential",
+    "building:levels": "5",
+    "building:material": "concrete",
+    "name": "Padà Lagos",
+    "website": "https://www.padalagos.com/"
+   }
+  },
+  {
+   "type": "way",
+   "id": 742228363,
+   "center": {
+    "lat": 6.5903232,
+    "lon": 3.3717966
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Alfred Garden Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 742237730,
+   "center": {
+    "lat": 6.5770213,
+    "lon": 3.3840009
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Ogudu GRA Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 743165522,
+   "center": {
+    "lat": 6.5641378,
+    "lon": 3.5362698
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "oba Adeborua Housing Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 743462616,
+   "center": {
+    "lat": 6.4029257,
+    "lon": 3.406536
+   },
+   "tags": {
+    "building": "residential",
+    "building:levels": "32",
+    "name": "Orun Azuri Tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 743462617,
+   "center": {
+    "lat": 6.4026762,
+    "lon": 3.4060183
+   },
+   "tags": {
+    "building": "residential",
+    "building:levels": "32",
+    "height": "145",
+    "name": "Oban Azuri Tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 743462619,
+   "center": {
+    "lat": 6.4027435,
+    "lon": 3.4061775
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Azuri Peninsula"
+   }
+  },
+  {
+   "type": "way",
+   "id": 745773517,
+   "center": {
+    "lat": 6.6352242,
+    "lon": 3.5153419
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Ayangburen Jubilee Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 746008855,
+   "center": {
+    "lat": 6.5668968,
+    "lon": 3.6005158
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Egbin Housing Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 747457379,
+   "center": {
+    "lat": 6.6200952,
+    "lon": 3.359532
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Lagos State Secretariat / HOS Staff Quarter",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 747457384,
+   "center": {
+    "lat": 6.622953,
+    "lon": 3.3608777
+   },
+   "tags": {
+    "contact:facebook": "https://www.facebook.com/pages/MKO-Abiola-Gardens/265057214033746",
+    "landuse": "residential",
+    "name": "M.K.O Abiola Gardens",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 747457387,
+   "center": {
+    "lat": 6.6201831,
+    "lon": 3.3622479
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Cornerstone Construction Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 772657241,
+   "center": {
+    "lat": 6.554642,
+    "lon": 3.3775767
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Millennium Estates",
+    "source": "mapillary"
+   }
+  },
+  {
+   "type": "way",
+   "id": 773557386,
+   "center": {
+    "lat": 6.4650586,
+    "lon": 3.4251573
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Osborne Foreshore Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 777459653,
+   "center": {
+    "lat": 6.5637043,
+    "lon": 3.3924428
+   },
+   "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Akinosho",
+    "building": "apartments",
+    "building:levels": "2",
+    "height": "9",
+    "name": "3 Akinosho Street Harmony Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 778616153,
+   "center": {
+    "lat": 6.6475655,
+    "lon": 3.5173477
+   },
+   "tags": {
+    "brand": "Conoil",
+    "building": "house",
+    "name": "Conoil"
+   }
+  },
+  {
+   "type": "way",
+   "id": 778625548,
+   "center": {
+    "lat": 6.6378851,
+    "lon": 3.5158618
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "His Glory Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 778625549,
+   "center": {
+    "lat": 6.6362403,
+    "lon": 3.5179504
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Glory Garden"
+   }
+  },
+  {
+   "type": "way",
+   "id": 779567822,
+   "center": {
+    "lat": 6.4507663,
+    "lon": 3.5161472
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Friends Colony Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 780679571,
+   "center": {
+    "lat": 6.5561348,
+    "lon": 3.2498799
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Igando Emergency Relief Resettlement Camp"
+   }
+  },
+  {
+   "type": "way",
+   "id": 781533954,
+   "center": {
+    "lat": 6.6247769,
+    "lon": 3.3278812
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Dairy Farm Low Cost Housing Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 781535275,
+   "center": {
+    "lat": 6.6271114,
+    "lon": 3.326084
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "New Dairy Farm Housing Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 781725882,
+   "center": {
+    "lat": 6.4584067,
+    "lon": 3.4153147
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Dolphin Estate",
+    "wikidata": "Q28404182",
+    "wikipedia": "en:Dolphin Estate, Ikoyi"
+   }
+  },
+  {
+   "type": "way",
+   "id": 782498809,
+   "center": {
+    "lat": 6.445366,
+    "lon": 3.4999547
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Nicon Town Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 783360129,
+   "center": {
+    "lat": 6.4624835,
+    "lon": 3.442877
+   },
+   "tags": {
+    "contact:phone": "+ 2348023685424",
+    "landuse": "residential",
+    "name": "Parkview Estate",
+    "website": "https://pvraikoyi.com/",
+    "wikidata": "Q25042698",
+    "wikipedia": "en:Parkview Estate, Ikoyi"
+   }
+  },
+  {
+   "type": "way",
+   "id": 783379225,
+   "center": {
+    "lat": 6.4650484,
+    "lon": 3.5428632
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Victoria Garden City",
+    "residential": "gated",
+    "wikidata": "Q28407112",
+    "wikipedia": "en:Victoria Garden City"
+   }
+  },
+  {
+   "type": "way",
+   "id": 783761330,
+   "center": {
+    "lat": 6.4385666,
+    "lon": 3.5058471
+   },
+   "tags": {
+    "addr:street": "Lekki Penninsula II 106104, Lekki",
+    "landuse": "residential",
+    "name": "Femi Okunnu Housing Estate (Phase 1)"
+   }
+  },
+  {
+   "type": "way",
+   "id": 783761335,
+   "center": {
+    "lat": 6.4413117,
+    "lon": 3.5062733
+   },
+   "tags": {
+    "addr:street": "Lekki Penninsula II 106104, Lekki",
+    "landuse": "residential",
+    "name": "Femi Okunnu Housing Estate (Phase 3)"
+   }
+  },
+  {
+   "type": "way",
+   "id": 784203399,
+   "center": {
+    "lat": 6.4112609,
+    "lon": 3.3631307
+   },
+   "tags": {
+    "description": "Agala is a rural community inn the coastal region of Lagos, Nigeria. Agala was primarily deserted in terms of population before the 2020 covid'19 pandemic when they were displaced by their original residence in Tarkwa bay, which makes us have Agala 1 and",
+    "landuse": "residential",
+    "leaf_type": "mixed",
+    "name": "Agala",
+    "residential": "rural"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785230443,
+   "center": {
+    "lat": 6.4653993,
+    "lon": 3.7132315
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Mayfair Gardens Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785343379,
+   "center": {
+    "lat": 6.4684375,
+    "lon": 3.6145382
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Llekki gardens estate phase1",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785343380,
+   "center": {
+    "lat": 6.4656244,
+    "lon": 3.6052161
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "landuse": "residential",
+    "name": "Lekki Gardens Phase 3 Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785343410,
+   "center": {
+    "lat": 6.4776428,
+    "lon": 3.5927908
+   },
+   "tags": {
+    "addr:street": "Lekki Gardens Phase 2, Ajah, Lagos.",
+    "landuse": "residential",
+    "name": "Lekki Gardens Phase 2"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785343416,
+   "center": {
+    "lat": 6.4671943,
+    "lon": 3.5896929
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Abraham Adesanya Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785392631,
+   "center": {
+    "lat": 6.5860321,
+    "lon": 3.9694011
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Epe"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785409183,
+   "center": {
+    "lat": 6.4628607,
+    "lon": 3.8503325
+   },
+   "tags": {
+    "addr:street": "Eleko Beach Road, Ibeju-Lekki,  Lagos",
+    "landuse": "residential",
+    "name": "Amen Estate, Ibeju-Lekki, Lagos"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785691856,
+   "center": {
+    "lat": 6.452154,
+    "lon": 3.5009068
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Beach Resort Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785691858,
+   "center": {
+    "lat": 6.4520614,
+    "lon": 3.4946837
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Cowrie Creek Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785691878,
+   "center": {
+    "lat": 6.4453459,
+    "lon": 3.5067388
+   },
+   "tags": {
+    "addr:street": "Jakande, Jakande, Lekki, Lagos",
+    "landuse": "residential",
+    "name": "Cadogan place estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785691907,
+   "center": {
+    "lat": 6.4530175,
+    "lon": 3.5051175
+   },
+   "tags": {
+    "addr:street": "Lekki, Lagos",
+    "landuse": "residential",
+    "name": "Arcadia Grove Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 785691931,
+   "center": {
+    "lat": 6.4619019,
+    "lon": 3.5116402
+   },
+   "tags": {
+    "addr:street": "Lekki Penninsula II 106104",
+    "landuse": "residential",
+    "name": "Pinnock Beach Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 786376920,
+   "center": {
+    "lat": 6.4508189,
+    "lon": 3.5277699
+   },
+   "tags": {
+    "addr:street": "Lekki",
+    "landuse": "residential",
+    "name": "Bourdillon Court Estate, Lekki",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 786594327,
+   "center": {
+    "lat": 6.497849,
+    "lon": 3.6129624
+   },
+   "tags": {
+    "addr:street": "Badore Road, Ajah, Lekki",
+    "landuse": "residential",
+    "name": "Seaside Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 787296057,
+   "center": {
+    "lat": 6.4377557,
+    "lon": 3.5614519
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Lekki County Homes",
+    "operator": "Megamound",
+    "website": "https://megamound.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 787296073,
+   "center": {
+    "lat": 6.4293039,
+    "lon": 3.5519046
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Ocean Bay Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 787296091,
+   "center": {
+    "lat": 6.429529,
+    "lon": 3.5725992
+   },
+   "tags": {
+    "addr:street": "Lekki, Lagos",
+    "landuse": "residential",
+    "name": "Cooplag Gardens Lekki"
+   }
+  },
+  {
+   "type": "way",
+   "id": 787296095,
+   "center": {
+    "lat": 6.4463467,
+    "lon": 3.5676887
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Emerald Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 787834659,
+   "center": {
+    "lat": 6.4468775,
+    "lon": 3.6390214
+   },
+   "tags": {
+    "addr:street": "Lekki, Ajah",
+    "landuse": "residential",
+    "name": "The Grenadines Homes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 788070306,
+   "center": {
+    "lat": 6.4641026,
+    "lon": 3.6999786
+   },
+   "tags": {
+    "addr:street": "Awoyaya, Ajah, Lagos",
+    "landuse": "residential",
+    "name": "Sapphire Gardens Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 789351060,
+   "center": {
+    "lat": 6.4289951,
+    "lon": 3.4076753
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "13",
+    "addr:street": "Louis Solomon Close",
+    "landuse": "residential",
+    "name": "Atlantic Royal Gardens",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 790722714,
+   "center": {
+    "lat": 6.4481266,
+    "lon": 3.4308278
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Abraham's Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 790872054,
+   "center": {
+    "lat": 6.4697187,
+    "lon": 3.775511
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Beechwood Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 790874236,
+   "center": {
+    "lat": 6.4608279,
+    "lon": 3.772786
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Adiva Plainfields Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 790902552,
+   "center": {
+    "lat": 6.4238276,
+    "lon": 3.4768241
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Goshen Beach Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 791300632,
+   "center": {
+    "lat": 6.4276847,
+    "lon": 3.477241
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "UPDC Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 791334291,
+   "center": {
+    "lat": 6.4292722,
+    "lon": 3.4857848
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Horizon Court Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 792771162,
+   "center": {
+    "lat": 6.4455918,
+    "lon": 3.4683988
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Blessing Kayode Gardens"
+   }
+  },
+  {
+   "type": "way",
+   "id": 793732375,
+   "center": {
+    "lat": 6.4464568,
+    "lon": 3.4695185
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "4",
+    "addr:street": "Kayode Animashaun Street",
+    "landuse": "residential",
+    "name": "SAS Courts"
+   }
+  },
+  {
+   "type": "way",
+   "id": 807568768,
+   "center": {
+    "lat": 6.5594393,
+    "lon": 3.3859007
+   },
+   "tags": {
+    "building": "house",
+    "name": "School"
+   }
+  },
+  {
+   "type": "way",
+   "id": 815057967,
+   "center": {
+    "lat": 6.6602132,
+    "lon": 4.007623
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Augustine University"
+   }
+  },
+  {
+   "type": "way",
+   "id": 845884718,
+   "center": {
+    "lat": 6.4568794,
+    "lon": 3.4180671
+   },
+   "tags": {
+    "addr:street": "Ikorodu Crescent",
+    "building": "yes",
+    "building:levels": "1",
+    "description": "Single Residential Building in a compound",
+    "landuse": "residential",
+    "name": "Residential"
+   }
+  },
+  {
+   "type": "way",
+   "id": 958980540,
+   "center": {
+    "lat": 6.453275,
+    "lon": 3.4590271
+   },
+   "tags": {
+    "addr:city": "Banana Island, Ikoyi, Lagos",
+    "addr:street": "216 Close",
+    "building": "apartments",
+    "building:levels": "4",
+    "height": "15",
+    "name": "Movamo Court B"
+   }
+  },
+  {
+   "type": "way",
+   "id": 958980541,
+   "center": {
+    "lat": 6.4529656,
+    "lon": 3.4593446
+   },
+   "tags": {
+    "addr:city": "Banana Island, Ikoyi, Lagos",
+    "addr:street": "216 Close",
+    "building": "apartments",
+    "building:levels": "4",
+    "height": "15",
+    "name": "Movamo Court A"
+   }
+  },
+  {
+   "type": "way",
+   "id": 958980542,
+   "center": {
+    "lat": 6.4534795,
+    "lon": 3.4592611
+   },
+   "tags": {
+    "addr:city": "Banana Island, Ikoyi, Lagos",
+    "addr:street": "216 Close",
+    "building": "apartments",
+    "building:levels": "4",
+    "height": "15",
+    "name": "Movamo Court C"
+   }
+  },
+  {
+   "type": "way",
+   "id": 961712157,
+   "center": {
+    "lat": 6.4651195,
+    "lon": 3.6038929
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "G15",
+    "addr:postcode": "101245",
+    "addr:street": "1st Avenue",
+    "building": "yes",
+    "landuse": "residential",
+    "name": "G15"
+   }
+  },
+  {
+   "type": "way",
+   "id": 961712180,
+   "center": {
+    "lat": 6.4648207,
+    "lon": 3.6039977
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "S21",
+    "addr:postcode": "101245",
+    "addr:street": "1st Avenue",
+    "building": "yes",
+    "landuse": "residential",
+    "name": "S21",
+    "residential": "terrace"
+   }
+  },
+  {
+   "type": "way",
+   "id": 962854828,
+   "center": {
+    "lat": 6.4267643,
+    "lon": 3.5284642
+   },
+   "tags": {
+    "building": "apartments",
+    "name": "Banana Island Apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 962854830,
+   "center": {
+    "lat": 6.4270317,
+    "lon": 3.5276892
+   },
+   "tags": {
+    "building": "apartments",
+    "name": "Silicon Valley Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605845,
+   "center": {
+    "lat": 6.4840762,
+    "lon": 3.796657
+   },
+   "tags": {
+    "building": "house",
+    "height": "6",
+    "name": "bangunan"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605846,
+   "center": {
+    "lat": 6.4838454,
+    "lon": 3.7972696
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "2",
+    "height": "6",
+    "name": "bangunan"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605847,
+   "center": {
+    "lat": 6.4837834,
+    "lon": 3.7976773
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "2",
+    "height": "6",
+    "name": "bangunan"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605848,
+   "center": {
+    "lat": 6.4833285,
+    "lon": 3.7975356
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "1",
+    "height": "6",
+    "name": "bangunan"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605849,
+   "center": {
+    "lat": 6.4832403,
+    "lon": 3.797584
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "1",
+    "height": "5",
+    "name": "bangunan"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605850,
+   "center": {
+    "lat": 6.4833313,
+    "lon": 3.7976298
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "2",
+    "height": "3",
+    "name": "bangunan"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605851,
+   "center": {
+    "lat": 6.4828912,
+    "lon": 3.7984028
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "1",
+    "height": "3",
+    "name": "bangunan"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605852,
+   "center": {
+    "lat": 6.4828903,
+    "lon": 3.7995333
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "1",
+    "height": "5",
+    "name": "bangunan"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605853,
+   "center": {
+    "lat": 6.4832226,
+    "lon": 3.7997189
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "1",
+    "height": "6",
+    "name": "bangunan"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605854,
+   "center": {
+    "lat": 6.4825849,
+    "lon": 3.7984712
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "1",
+    "height": "5",
+    "name": "A"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605855,
+   "center": {
+    "lat": 6.4825203,
+    "lon": 3.7986635
+   },
+   "tags": {
+    "building": "apartments",
+    "building:levels": "4",
+    "height": "14",
+    "name": "B"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605856,
+   "center": {
+    "lat": 6.4824885,
+    "lon": 3.7985079
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "1",
+    "height": "5",
+    "name": "C"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605857,
+   "center": {
+    "lat": 6.4824142,
+    "lon": 3.7985072
+   },
+   "tags": {
+    "building": "residential",
+    "building:levels": "3",
+    "height": "12",
+    "name": "D"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605858,
+   "center": {
+    "lat": 6.482885,
+    "lon": 3.7980399
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "5",
+    "height": "13",
+    "name": "E"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605859,
+   "center": {
+    "lat": 6.4828126,
+    "lon": 3.7976412
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "3",
+    "height": "10",
+    "name": "F"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964605860,
+   "center": {
+    "lat": 6.4816105,
+    "lon": 3.7977715
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "2",
+    "height": "7",
+    "name": "G"
+   }
+  },
+  {
+   "type": "way",
+   "id": 964690845,
+   "center": {
+    "lat": 6.6081087,
+    "lon": 3.604672
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "2",
+    "height": "4",
+    "name": "243"
+   }
+  },
+  {
+   "type": "way",
+   "id": 969843483,
+   "center": {
+    "lat": 6.5289946,
+    "lon": 3.3982849
+   },
+   "tags": {
+    "description": "may be refer to as slum",
+    "landuse": "residential",
+    "name": "Bariga",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "way",
+   "id": 975560310,
+   "center": {
+    "lat": 6.4345753,
+    "lon": 3.5153633
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:street": "Ologolo Rd, Lekki Penninsula II 106104, Lekki",
+    "landuse": "residential",
+    "name": "Whiteoak Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 976654136,
+   "center": {
+    "lat": 6.4768856,
+    "lon": 3.5735677
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:street": "Ajah, Lagos",
+    "landuse": "residential",
+    "name": "Victory Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 987697653,
+   "center": {
+    "lat": 6.4642816,
+    "lon": 3.5711977
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Royal Gardens Estate, Ajah, Lekki, Lagos."
+   }
+  },
+  {
+   "type": "way",
+   "id": 988251667,
+   "center": {
+    "lat": 6.4667328,
+    "lon": 3.5833084
+   },
+   "tags": {
+    "addr:street": "Graceland Estate, Lekki, Ajah , Lagos",
+    "landuse": "residential",
+    "name": "Graceland Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 988261507,
+   "center": {
+    "lat": 6.4711516,
+    "lon": 3.6198347
+   },
+   "tags": {
+    "addr:street": "Ocean Palm Estate, Ogidan, Sangotedo, Lagos",
+    "landuse": "residential",
+    "name": "Ocean Palm Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 992672913,
+   "center": {
+    "lat": 6.4327412,
+    "lon": 3.517701
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "southlake homes phase 3, Lekki"
+   }
+  },
+  {
+   "type": "way",
+   "id": 992673186,
+   "center": {
+    "lat": 6.4327419,
+    "lon": 3.5180063
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "southlake homes phase 2"
+   }
+  },
+  {
+   "type": "way",
+   "id": 992673428,
+   "center": {
+    "lat": 6.4327401,
+    "lon": 3.5183925
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "southlake homes phase 1"
+   }
+  },
+  {
+   "type": "way",
+   "id": 992677364,
+   "center": {
+    "lat": 6.5053575,
+    "lon": 3.6143089
+   },
+   "tags": {
+    "addr:street": "Badore, Ajah, Lagos",
+    "landuse": "residential",
+    "name": "Cooperative Villas Residential Estate, Ajah, Lagos"
+   }
+  },
+  {
+   "type": "way",
+   "id": 992679700,
+   "center": {
+    "lat": 6.5112842,
+    "lon": 3.5960555
+   },
+   "tags": {
+    "addr:street": "Badore, Ajah, Lagos",
+    "landuse": "residential",
+    "name": "Greenville estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 992681389,
+   "center": {
+    "lat": 6.4701441,
+    "lon": 3.5723322
+   },
+   "tags": {
+    "addr:street": "Ajah, Lagos",
+    "landuse": "residential",
+    "name": "Tera Haven Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 995522164,
+   "center": {
+    "lat": 6.4436692,
+    "lon": 3.5269687
+   },
+   "tags": {
+    "addr:street": "Lekki",
+    "landuse": "residential",
+    "name": "Chevyview Estate, Lekki"
+   }
+  },
+  {
+   "type": "way",
+   "id": 995524149,
+   "center": {
+    "lat": 6.4602156,
+    "lon": 3.4493858
+   },
+   "tags": {
+    "addr:street": "Lekki, Lagos",
+    "landuse": "residential",
+    "name": "Rebecca Court"
+   }
+  },
+  {
+   "type": "way",
+   "id": 998873741,
+   "center": {
+    "lat": 6.4548307,
+    "lon": 3.4440245
+   },
+   "tags": {
+    "building": "apartments",
+    "name": "Shalom Apartment"
+   }
+  },
+  {
+   "type": "way",
+   "id": 998873746,
+   "center": {
+    "lat": 6.4555022,
+    "lon": 3.4445613
+   },
+   "tags": {
+    "barrier": "wall",
+    "landuse": "residential",
+    "name": "Wemabod Towers"
+   }
+  },
+  {
+   "type": "way",
+   "id": 998873748,
+   "center": {
+    "lat": 6.4567769,
+    "lon": 3.4432734
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "360 Degrees Towers",
+    "operator": "Fourscore Homes (Heights)",
+    "website": "http://360degreesikoyi.com/",
+    "wikidata": "Q109351227",
+    "wikipedia": "en:2021 Lagos high-rise collapse"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1020020280,
+   "center": {
+    "lat": 6.5966747,
+    "lon": 3.3566419
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "411 Studio",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1024269696,
+   "center": {
+    "lat": 6.4390305,
+    "lon": 3.5166663
+   },
+   "tags": {
+    "addr:city": "Lekki",
+    "addr:housenumber": "8",
+    "addr:street": "Agungi Ajiran Road",
+    "building": "apartments",
+    "building:flats": "10",
+    "building:levels": "3",
+    "height": "0",
+    "name": "VTL Suites",
+    "name:en": "Premium Serviced Apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1040064906,
+   "center": {
+    "lat": 6.5383365,
+    "lon": 3.3834726
+   },
+   "tags": {
+    "addr:city": "SHOMOLU",
+    "addr:housenumber": "10A",
+    "addr:postcode": "100233",
+    "addr:street": "SOYINKA STREET",
+    "building": "apartments",
+    "name": "SURFFCON HOMES"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1044623023,
+   "center": {
+    "lat": 6.4457994,
+    "lon": 3.4348301
+   },
+   "tags": {
+    "building": "residential",
+    "height": "8.0",
+    "name": "Cuddle by Cadwell"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1087372158,
+   "center": {
+    "lat": 6.6535538,
+    "lon": 3.4848717
+   },
+   "tags": {
+    "building": "house",
+    "name": "Play Ground"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1090061402,
+   "center": {
+    "lat": 6.5621257,
+    "lon": 3.3649423
+   },
+   "tags": {
+    "addr:city": "Shomolu Lagos",
+    "addr:housenumber": "100",
+    "addr:postcode": "48",
+    "addr:street": "Trailhead Rd",
+    "building": "house",
+    "building:levels": "1",
+    "description": "3 bedroom 2 bath",
+    "name": "House #1"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1091117495,
+   "center": {
+    "lat": 6.6499393,
+    "lon": 3.5247624
+   },
+   "tags": {
+    "building": "house",
+    "name": "Home"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1092100509,
+   "center": {
+    "lat": 6.6601713,
+    "lon": 3.5216168
+   },
+   "tags": {
+    "building": "house",
+    "name": "Jabbas Palast"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1100788352,
+   "center": {
+    "lat": 6.660617,
+    "lon": 3.4843974
+   },
+   "tags": {
+    "building": "house",
+    "name": "buildings"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1117443992,
+   "center": {
+    "lat": 6.4278689,
+    "lon": 3.4826538
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Ikate",
+    "residential": "urban"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1124312569,
+   "center": {
+    "lat": 6.4412548,
+    "lon": 3.4906445
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Madiba Court",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1141584563,
+   "center": {
+    "lat": 6.6452866,
+    "lon": 3.6176752
+   },
+   "tags": {
+    "building": "house",
+    "name": "House"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1141584564,
+   "center": {
+    "lat": 6.6459895,
+    "lon": 3.6177881
+   },
+   "tags": {
+    "building": "house",
+    "name": "Home"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1141584565,
+   "center": {
+    "lat": 6.6453488,
+    "lon": 3.618004
+   },
+   "tags": {
+    "building": "house",
+    "name": "House"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1176583274,
+   "center": {
+    "lat": 6.6116166,
+    "lon": 3.3559047
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "res1",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1240407787,
+   "center": {
+    "lat": 6.6470263,
+    "lon": 3.2924086
+   },
+   "tags": {
+    "building": "house",
+    "name": "White House"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1249947918,
+   "center": {
+    "lat": 6.5469297,
+    "lon": 3.3914886
+   },
+   "tags": {
+    "amenity": "place_of_worship",
+    "building": "house",
+    "name": "His Worship Christian Network",
+    "religion": "christian"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1253429699,
+   "center": {
+    "lat": 6.4556935,
+    "lon": 3.526307
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:street": "Dogwood Street, Northern foreshore Estate. Lekki",
+    "building": "yes",
+    "building:levels": "2",
+    "landuse": "residential",
+    "name": "Residential"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1253429700,
+   "center": {
+    "lat": 6.4556654,
+    "lon": 3.5264945
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:street": "Dogwood Crescent, Northern Foreshore Estate. Lekki",
+    "building": "yes",
+    "building:levels": "2",
+    "landuse": "residential",
+    "name": "Residential"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1253429704,
+   "center": {
+    "lat": 6.4556794,
+    "lon": 3.5268449
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:street": "Dogwood Crescent, Northern Foreshore Estate. Lekki",
+    "building": "yes",
+    "building:levels": "2",
+    "landuse": "residential",
+    "name": "Residential"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1253429709,
+   "center": {
+    "lat": 6.4556971,
+    "lon": 3.527029
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:street": "Dogwood Crescent, Northern foreshore Estate. lekki",
+    "building": "yes",
+    "building:levels": "2",
+    "landuse": "residential",
+    "name": "Residential"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262193738,
+   "center": {
+    "lat": 6.6066507,
+    "lon": 3.2623719
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:postcode": "100001",
+    "addr:street": "High Castle Estate, Ipaja",
+    "building": "residential",
+    "name": "High Castle Estate, Ipaja"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262193742,
+   "center": {
+    "lat": 6.6064353,
+    "lon": 3.2620268
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:postcode": "100001",
+    "addr:street": "High Castle Estate, Ipaja",
+    "building": "residential",
+    "name": "High Castle Estate, Ipaja"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1275734423,
+   "center": {
+    "lat": 6.5174023,
+    "lon": 3.3184487
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:postcode": "102214",
+    "addr:street": "Okota Road",
+    "building": "apartments",
+    "image": "https://share.google/o88QcocO9Aiwkm3Wu",
+    "name": "MyOff Systems",
+    "office": "it",
+    "opening_hours": "Mo-Fr 09:00-17:00",
+    "phone": "+2347041551522",
+    "website": "https://www.myoffsystems.com/"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1286336464,
+   "center": {
+    "lat": 6.538808,
+    "lon": 3.396773
+   },
+   "tags": {
+    "building": "residential",
+    "building:levels": "0",
+    "name": "residential building in ifelodun"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1286756426,
+   "center": {
+    "lat": 6.5729191,
+    "lon": 3.3615256
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "reidential building"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1286757229,
+   "center": {
+    "lat": 6.5728228,
+    "lon": 3.360907
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "CBQ 3",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1286757230,
+   "center": {
+    "lat": 6.5724169,
+    "lon": 3.3613037
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "CBQ 2",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1303476158,
+   "center": {
+    "lat": 6.5545247,
+    "lon": 3.3602527
+   },
+   "tags": {
+    "building": "house",
+    "name": "Building rooftop"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1307950607,
+   "center": {
+    "lat": 6.4460691,
+    "lon": 3.4857129
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "kaplan shortlet",
+    "residential": "urban"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1323031106,
+   "center": {
+    "lat": 6.5216746,
+    "lon": 3.3724616
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Open field",
+    "residential": "urban"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1330560130,
+   "center": {
+    "lat": 6.5349755,
+    "lon": 3.3786445
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "6",
+    "addr:postcode": "102216",
+    "addr:street": "Akanni Street",
+    "building": "residential",
+    "name": "6 Akanni St"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1330560133,
+   "center": {
+    "lat": 6.5348989,
+    "lon": 3.3789668
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:postcode": "102216",
+    "addr:street": "Ogunbadejo St",
+    "building": "residential",
+    "name": "Bajulaiye"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1330560137,
+   "center": {
+    "lat": 6.5347978,
+    "lon": 3.3794941
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:housenumber": "3",
+    "addr:postcode": "102216",
+    "addr:street": "Ogunbadejo St",
+    "building": "residential",
+    "name": "3 Ogunbadejo St"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1330560154,
+   "center": {
+    "lat": 6.5346144,
+    "lon": 3.3800672
+   },
+   "tags": {
+    "addr:street": "Abiodun Street",
+    "building": "residential",
+    "name": "Bajulaiye"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1355814877,
+   "center": {
+    "lat": 6.4268703,
+    "lon": 2.8426358
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Afowo Doforo"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1355814879,
+   "center": {
+    "lat": 6.4402406,
+    "lon": 2.8629738
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Iyafin"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1355836069,
+   "center": {
+    "lat": 6.4368624,
+    "lon": 2.8941252
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Isalu"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1355836070,
+   "center": {
+    "lat": 6.4270505,
+    "lon": 2.8943291
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Ajara"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1355900308,
+   "center": {
+    "lat": 6.4227811,
+    "lon": 2.7670697
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Weshere"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1355900309,
+   "center": {
+    "lat": 6.4228733,
+    "lon": 2.7567064
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Kese"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1355900310,
+   "center": {
+    "lat": 6.4133788,
+    "lon": 2.9283957
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Topo"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1355900311,
+   "center": {
+    "lat": 6.4144871,
+    "lon": 2.9662507
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Akarakumo"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1381094893,
+   "center": {
+    "lat": 6.4322995,
+    "lon": 3.5161841
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Rogersville Estate",
+    "residential": "estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1421075012,
+   "center": {
+    "lat": 6.4960699,
+    "lon": 3.5813045
+   },
+   "tags": {
+    "building": "apartments",
+    "building:flats": "192",
+    "building:levels": "6",
+    "height": "18",
+    "name": "ASPIRE"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1432587344,
+   "center": {
+    "lat": 6.6549929,
+    "lon": 3.3328187
+   },
+   "tags": {
+    "addr:city": "Obawole",
+    "addr:housenumber": "30",
+    "addr:postcode": "100216",
+    "addr:street": "Ashabi Taiwo Street",
+    "building": "residential",
+    "name": "30, Ashabi Taiwo Street, Obawole"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1432590856,
+   "center": {
+    "lat": 6.6587327,
+    "lon": 3.3269825
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Fagba, Lagos",
+    "residential": "irregular_settlement"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1434344659,
+   "center": {
+    "lat": 6.4500904,
+    "lon": 3.4980871
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Hampton Bay Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1434344660,
+   "center": {
+    "lat": 6.4571528,
+    "lon": 3.5161401
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Victoria Bay 2 Estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1436182922,
+   "center": {
+    "lat": 6.5443909,
+    "lon": 3.3022434
+   },
+   "tags": {
+    "addr:city": "Ejigbo",
+    "addr:postcode": "102214",
+    "addr:street": "Ori Ni Owo Street",
+    "landuse": "residential",
+    "name": "Orilowo Estate",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1444105668,
+   "center": {
+    "lat": 6.4716413,
+    "lon": 3.5649733
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Oriola Fagbeyiro Estate",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1453357478,
+   "center": {
+    "lat": 6.4889802,
+    "lon": 3.3040905
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:street": "Ago palace way, Lagos",
+    "area": "yes",
+    "landuse": "residential",
+    "name": "Victory Estate",
+    "postal_code": "100263",
+    "residential": "gated"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1468952724,
+   "center": {
+    "lat": 6.4141289,
+    "lon": 3.4276158
+   },
+   "tags": {
+    "building": "house",
+    "building:levels": "3",
+    "name": "First Villa in Eko Atlantic"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1499747887,
+   "center": {
+    "lat": 6.6044126,
+    "lon": 3.2657974
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:postcode": "100001",
+    "addr:street": "High Castle Estate, Ipaja",
+    "building": "residential",
+    "height": "0",
+    "name": "High Castle Estate, Ipaja",
+    "website": "https://highcastleestate.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1518807812,
+   "center": {
+    "lat": 6.4404716,
+    "lon": 3.4318505
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:street": "Ozumba Mbadiwe Avenue",
+    "building": "residential",
+    "building:levels": "28",
+    "name": "Metropolitan Towers"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1518807813,
+   "center": {
+    "lat": 6.4409573,
+    "lon": 3.433819
+   },
+   "tags": {
+    "addr:city": "Lagos",
+    "addr:street": "Ozumba Mbadiwe Avenue",
+    "building": "residential",
+    "building:levels": "25",
+    "name": "Quantum Luxury Towers"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1518807814,
+   "center": {
+    "lat": 6.410069,
+    "lon": 3.4135482
+   },
+   "tags": {
+    "building": "residential",
+    "building:condition": "under construction",
+    "name": "Phoenix Rising"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1518807815,
+   "center": {
+    "lat": 6.4191469,
+    "lon": 3.4308873
+   },
+   "tags": {
+    "addr:city": "Eko Atlantic City",
+    "building": "residential",
+    "building:levels": "16",
+    "name": "The Hive"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1518807816,
+   "center": {
+    "lat": 6.4106408,
+    "lon": 3.4071299
+   },
+   "tags": {
+    "building": "residential",
+    "building:condition": "under construction",
+    "building:levels": "30",
+    "name": "Chess tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1518807820,
+   "center": {
+    "lat": 6.4067913,
+    "lon": 3.4145518
+   },
+   "tags": {
+    "building": "residential",
+    "building:condition": "under construction",
+    "building:levels": "38",
+    "name": "Champions Sigature Tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1518807821,
+   "center": {
+    "lat": 6.4097557,
+    "lon": 3.4119594
+   },
+   "tags": {
+    "building": "residential",
+    "building:condition": "under construction",
+    "building:levels": "16",
+    "name": "The One"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1519566679,
+   "center": {
+    "lat": 6.4459486,
+    "lon": 3.4448317
+   },
+   "tags": {
+    "building": "residential",
+    "building:condition": "under construction",
+    "building:levels": "39",
+    "name": "51 Bourdillon"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1520075289,
+   "center": {
+    "lat": 6.4112411,
+    "lon": 3.4059342
+   },
+   "tags": {
+    "building": "residential",
+    "building:condition": "under construction",
+    "building:levels": "21",
+    "name": "Caspian Heights"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1521344522,
+   "center": {
+    "lat": 6.5982607,
+    "lon": 3.3565523
+   },
+   "tags": {
+    "addr:city": "Ikeja",
+    "addr:housenumber": "4",
+    "addr:postcode": "100281",
+    "addr:street": "Adefolu Drive",
+    "building": "residential",
+    "building:levels": "3",
+    "height": "12",
+    "name": "The Charles"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1525842719,
+   "center": {
+    "lat": 6.652617,
+    "lon": 3.3174451
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "5",
+    "residential": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1529658762,
+   "center": {
+    "lat": 6.6668306,
+    "lon": 3.6363673
+   },
+   "tags": {
+    "building": "residential",
+    "building:levels": "3",
+    "height": "12",
+    "name": "ESME HOSTELL"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1529658763,
+   "center": {
+    "lat": 6.6665077,
+    "lon": 3.6369657
+   },
+   "tags": {
+    "building": "residential",
+    "building:levels": "3",
+    "height": "12",
+    "name": "mercy hostel",
+    "type": "multipolygon"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1547341948,
+   "center": {
+    "lat": 6.4777704,
+    "lon": 3.5793796
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Divine Homes Estate",
+    "wikidata": "Q141020752"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1547480878,
+   "center": {
+    "lat": 6.4650388,
+    "lon": 3.5806157
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Dwellsworth Homes",
+    "residential": "estate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1547487560,
+   "center": {
+    "lat": 6.4623595,
+    "lon": 3.5807963
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Lekki Pride 1.0 Estate",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1549059022,
+   "center": {
+    "lat": 6.4331955,
+    "lon": 3.5207159
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Igbo Efon"
+   }
+  }
+ ]
+}

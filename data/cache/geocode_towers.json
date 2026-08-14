@@ -1,0 +1,189 @@
+[
+ {
+  "place_id": 40871275,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 567150385,
+  "lat": "6.4513846",
+  "lon": "3.4416266",
+  "category": "landuse",
+  "type": "residential",
+  "place_rank": 24,
+  "importance": 0.08006974059662772,
+  "addresstype": "residential",
+  "name": "Niger Towers",
+  "display_name": "Niger Towers, 51/55, Lagos, Eti Osa, Lagos, Nigeria",
+  "address": {
+   "residential": "Niger Towers",
+   "house_number": "51/55",
+   "city": "Lagos",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4509236",
+   "6.4517778",
+   "3.4405863",
+   "3.4426596"
+  ]
+ },
+ {
+  "place_id": 40853498,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 593494118,
+  "lat": "6.4515018",
+  "lon": "3.4290656",
+  "category": "landuse",
+  "type": "commercial",
+  "place_rank": 24,
+  "importance": 0.08006974059662772,
+  "addresstype": "commercial",
+  "name": "Mulliner Towers",
+  "display_name": "Mulliner Towers, Ikoyi, Eti Osa, Lagos, Nigeria",
+  "address": {
+   "commercial": "Mulliner Towers",
+   "town": "Ikoyi",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4508971",
+   "6.4522138",
+   "3.4284876",
+   "3.4296686"
+  ]
+ },
+ {
+  "place_id": 40880162,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 567150470,
+  "lat": "6.4379229",
+  "lon": "3.4122103",
+  "category": "landuse",
+  "type": "commercial",
+  "place_rank": 24,
+  "importance": 0.08006974059662772,
+  "addresstype": "commercial",
+  "name": "The Wings Office Towers",
+  "display_name": "The Wings Office Towers, 17A, Victoria Island, Lagos, Eti Osa, Lagos, Nigeria",
+  "address": {
+   "commercial": "The Wings Office Towers",
+   "house_number": "17A",
+   "suburb": "Victoria Island",
+   "city": "Lagos",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4373845",
+   "6.4384127",
+   "3.4115744",
+   "3.4128371"
+  ]
+ },
+ {
+  "place_id": 40879853,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 591832835,
+  "lat": "6.4399099",
+  "lon": "3.4296479",
+  "category": "landuse",
+  "type": "commercial",
+  "place_rank": 24,
+  "importance": 0.08006974059662772,
+  "addresstype": "commercial",
+  "name": "Civic Towers",
+  "display_name": "Civic Towers, Victoria Island, Ikoyi, Eti Osa, Lagos, Nigeria",
+  "address": {
+   "commercial": "Civic Towers",
+   "suburb": "Victoria Island",
+   "town": "Ikoyi",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4396499",
+   "6.4403226",
+   "3.4290403",
+   "3.4302767"
+  ]
+ },
+ {
+  "place_id": 418828483,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 1518807823,
+  "lat": "6.4216935",
+  "lon": "3.4289189",
+  "category": "landuse",
+  "type": "construction",
+  "place_rank": 24,
+  "importance": 0.08006974059662772,
+  "addresstype": "construction",
+  "name": "Oyster Towers Site",
+  "display_name": "Oyster Towers Site, Victoria Island, Itirin, Eti Osa, Lagos, Nigeria",
+  "address": {
+   "construction": "Oyster Towers Site",
+   "suburb": "Victoria Island",
+   "village": "Itirin",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4212591",
+   "6.4221116",
+   "3.4284791",
+   "3.4293491"
+  ]
+ },
+ {
+  "place_id": 40835507,
+  "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 568364497,
+  "lat": "6.4232027",
+  "lon": "3.4478759",
+  "category": "landuse",
+  "type": "commercial",
+  "place_rank": 24,
+  "importance": 0.08006974059662772,
+  "addresstype": "commercial",
+  "name": "Landmark Towers",
+  "display_name": "Landmark Towers, 5B, Maroko, Lagos, Eti Osa, Lagos, Nigeria",
+  "address": {
+   "commercial": "Landmark Towers",
+   "house_number": "5B",
+   "suburb": "Maroko",
+   "city": "Lagos",
+   "county": "Eti Osa",
+   "state": "Lagos",
+   "ISO3166-2-lvl4": "NG-LA",
+   "country": "Nigeria",
+   "country_code": "ng"
+  },
+  "boundingbox": [
+   "6.4225835",
+   "6.4238221",
+   "3.4476005",
+   "3.4481899"
+  ]
+ }
+]

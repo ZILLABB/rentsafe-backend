@@ -637,3 +637,87 @@ def flood_zone_from_elevation(elevation_m: float, drainage_dist_m: float | None)
     if elevation_m <= 15:
         return "Moderate"
     return "Low"
+
+
+# A name that is only digits is a house number OSM recorded without a street —
+# "28", "60/61". Importing those as properties would fill the map with buildings
+# called "28" that no tenant could recognise or search for.
+_NUMERIC_NAME_RE = re.compile(r"^[\d\s/,.-]+$")
+
+# Words that mean the feature is a *place* rather than a building someone rents
+# a flat in. These already arrive through `lagos_neighbourhoods`.
+_AREA_WORDS = {"estate", "scheme", "layout", "gra", "phase", "village", "town"}
+
+# Buildings nobody rents a flat in, and which should not be soliciting public
+# reviews at all. Diplomatic residences are the sharp case: OSM names them after
+# the post's occupant, so importing one would invite the internet to review a
+# named individual's home. Barracks and government housing are institutional —
+# a tenant review model does not apply to them.
+_NOT_RENTABLE_RE = re.compile(
+    r"residence of|high commission|embassy|consulate|state house|"
+    r"government house|barracks|police college|military|naval|army|prison",
+    re.IGNORECASE,
+)
+
+
+def lagos_residential_buildings(*, offline: bool = False) -> list[dict]:
+    """Named residential buildings and estates across Lagos, from OSM.
+
+    This is the honest half of "seed real properties". A building's name and
+    location are objective, openly licensed facts. What tenants paid, whether
+    it floods and what the landlord is like are not facts OSM holds, and they
+    stay empty until a tenant reports them.
+
+    Selection is by *name*, not by OSM tag. The tagging in Lagos is
+    inconsistent — Niger Towers and Titanium Towers are tagged
+    ``landuse=residential`` while dozens of ``building=house`` features are
+    named "28" or "60/61" — so trusting the tag would import the house numbers
+    and skip the towers.
+    """
+    query = """
+    [out:json][timeout:180];
+    area["name"="Lagos"]["admin_level"="4"]->.lagos;
+    (
+      way(area.lagos)["building"~"^(apartments|residential|dormitory)$"]["name"];
+      way(area.lagos)["landuse"="residential"]["name"];
+      way(area.lagos)["residential"="gated"]["name"];
+      relation(area.lagos)["landuse"="residential"]["name"];
+    );
+    out tags center 1200;
+    """
+    data = overpass(query, key="osm_lagos_residential", offline=offline)
+
+    out: list[dict] = []
+    seen: set[str] = set()
+    for e in data.get("elements", []):
+        tags = e.get("tags", {})
+        name = (tags.get("name") or "").strip()
+        centre = e.get("center") or {"lat": e.get("lat"), "lon": e.get("lon")}
+        if not name or centre.get("lat") is None:
+            continue
+        if _NUMERIC_NAME_RE.match(name) or len(name) < 3:
+            continue
+        if _NOT_RENTABLE_RE.search(name):
+            continue
+
+        key = f"{name.lower()}|{centre['lat']:.4f},{centre['lon']:.4f}"
+        if key in seen:
+            continue
+        seen.add(key)
+
+        words = {w.strip(".,").lower() for w in name.split()}
+        out.append(
+            {
+                "name": name,
+                "lat": centre["lat"],
+                "lng": centre["lon"],
+                "street": tags.get("addr:street"),
+                "housenumber": tags.get("addr:housenumber"),
+                # Recorded rather than filtered on: an estate is still somewhere
+                # a tenant lives, but the caller may want to treat it as less
+                # precise than a single named block.
+                "is_area": bool(words & _AREA_WORDS),
+                "osm_kind": tags.get("building") or tags.get("landuse") or "residential",
+            }
+        )
+    return sorted(out, key=lambda r: r["name"])

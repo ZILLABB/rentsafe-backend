@@ -28,9 +28,17 @@ from dataclasses import dataclass
 from . import geohash
 
 _LGA_RE = re.compile(r"^[A-Z]{2,5}$")
-_AREA_RE = re.compile(r"^[A-Z]{2,10}$")
+# Digits are allowed in an area code because the importer mints them: two Lagos
+# suburbs starting with the same letters collide, and the second gets a numeric
+# suffix ("LE2" for Lekki Phase II, "SU2" for Surulere). Letters-only here meant
+# no property could be registered in fifteen real areas — including Lekki Phase
+# I and II, Victoria Garden City, Surulere and Apapa — because minting the
+# PropertyID raised before anything was written.
+#
+# The dash separators carry the parse, so digits inside a field are unambiguous.
+_AREA_RE = re.compile(r"^[A-Z0-9]{2,10}$")
 _PROPERTY_ID_RE = re.compile(
-    r"^(?P<lga>[A-Z]{2,5})-(?P<area>[A-Z]{2,10})-(?P<hash>[0-9A-Z]{6})-(?P<seq>\d{4})$"
+    r"^(?P<lga>[A-Z]{2,5})-(?P<area>[A-Z0-9]{2,10})-(?P<hash>[0-9A-Z]{6})-(?P<seq>\d{4})$"
 )
 
 SEQ_WIDTH = 4
