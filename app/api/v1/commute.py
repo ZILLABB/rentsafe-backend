@@ -72,13 +72,17 @@ class CommuteOut(BaseModel):
     typical_min: int | None = None
     fastest_min: int | None = None
     slowest_min: int | None = None
-    # A routing provider's traffic-aware drive time, for comparison against
-    # what tenants report. Null when no provider is configured, when the
-    # provider is unreachable, or when there is no drivable route — all three
-    # mean "we don't know", and none of them may render as a number.
+    # A routing engine's drive time, for comparison against what tenants
+    # report. Null when the provider is unreachable or there is no drivable
+    # route — both mean "we don't know", and neither may render as a number.
     google_estimate_min: int | None = None
-    # Lets the UI distinguish "nobody has wired a routing key" from "we asked
-    # and got nothing back", which are different messages to a user.
+    # What kind of number that is: "traffic" (a provider's model of current
+    # conditions, what a phone shows) or "free_flow" (the road network at its
+    # speed limits — 4am with nobody about). They are not interchangeable and
+    # the UI must not describe them with the same words: calling a free-flow
+    # figure "what your maps app says" would be false, and would make the
+    # tenant reports look absurd rather than informative.
+    routing_kind: str | None = None
     routing_configured: bool = False
     by_window: list[WindowStat] = Field(default_factory=list)
     modes: list[str] = Field(default_factory=list)
@@ -200,7 +204,7 @@ async def property_commute(
     # predicts and what tenants actually experience is the finding, so
     # collapsing the two would destroy the only thing this number is for.
     if dest.lat is not None and dest.lng is not None:
-        out.google_estimate_min = await routing.drive_estimate_min(
+        out.google_estimate_min, out.routing_kind = await routing.drive_estimate_min(
             (float(prop.lat), float(prop.lng)), (float(dest.lat), float(dest.lng))
         )
     out.routing_configured = routing.is_configured()
@@ -221,6 +225,9 @@ async def property_commute(
     estimates = [r.google_estimate_min for r in reports if r.google_estimate_min]
     if estimates:
         out.google_estimate_min = _median(estimates)
+        # Captured from the tenant's own phone at the time of the trip, so it
+        # is a traffic figure whatever the live fallback happens to be.
+        out.routing_kind = routing.TRAFFIC
 
     by_window: list[WindowStat] = []
     for key, label in WINDOWS.items():

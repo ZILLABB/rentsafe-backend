@@ -35,6 +35,16 @@ settings = get_settings()
 
 GOOGLE_ROUTES_URL = "https://routes.googleapis.com/directions/v2:computeRoutes"
 MAPBOX_DIRECTIONS_URL = "https://api.mapbox.com/directions/v5/mapbox/driving-traffic"
+# FOSSGIS runs a public Valhalla instance over OpenStreetMap. No key, no bill,
+# and no live traffic — it answers "how long would this take on empty roads".
+VALHALLA_URL = "https://valhalla1.openstreetmap.de/route"
+
+# What kind of number came back. These are not interchangeable and the UI must
+# not present them with the same words:
+#   traffic    a provider's model of current conditions — what a phone shows
+#   free_flow  the road network at its speed limits, i.e. 4am with nobody about
+TRAFFIC = "traffic"
+FREE_FLOW = "free_flow"
 
 # Traffic-aware estimates go stale, but not within an hour, and every call is
 # billable. Keyed on coordinates rounded to ~100m so nearby properties share.
@@ -54,13 +64,18 @@ def _cache_key(origin: tuple[float, float], dest: tuple[float, float]) -> str:
     return f"route:{o}:{d}"
 
 
-def is_configured() -> bool:
-    """Whether any routing provider has credentials.
-
-    Exposed so the API can tell the UI *why* an estimate is missing — "not
-    configured" and "no route found" are different things to a user.
-    """
+def has_traffic_provider() -> bool:
+    """Whether a paid, traffic-aware provider is configured."""
     return bool(settings.google_maps_api_key or settings.mapbox_access_token)
+
+
+def is_configured() -> bool:
+    """Whether any estimate is obtainable at all.
+
+    Always true now that the keyless fallback exists, but kept so the API can
+    still distinguish "we have no source" from "we asked and got nothing".
+    """
+    return True
 
 
 async def _google(
@@ -115,44 +130,74 @@ async def _mapbox(
     return round(float(routes[0]["duration"]) / 60)
 
 
-async def drive_estimate_min(
+async def _valhalla(
     origin: tuple[float, float], dest: tuple[float, float]
 ) -> int | None:
-    """Traffic-aware drive time in minutes, or ``None`` if we cannot know it.
+    """Free-flow drive time from FOSSGIS's public Valhalla instance.
 
-    ``None`` is a legitimate, common answer: no key configured, provider down,
-    or no drivable route. Every one of those must read as "we don't know", never
-    as a number.
+    Community-run and donation-funded, so the results are cached hard and this
+    is never called in a loop. Attribution is owed to OpenStreetMap.
     """
-    if not is_configured():
-        return None
+    body = {
+        "locations": [
+            {"lat": origin[0], "lon": origin[1]},
+            {"lat": dest[0], "lon": dest[1]},
+        ],
+        "costing": "auto",
+        # No manoeuvre list needed; only the summary is used.
+        "directions_options": {"units": "kilometers"},
+    }
+    async with httpx.AsyncClient(timeout=TIMEOUT_S) as client:
+        r = await client.post(VALHALLA_URL, json=body)
+        r.raise_for_status()
+        payload = r.json()
+    seconds = payload.get("trip", {}).get("summary", {}).get("time")
+    return round(float(seconds) / 60) if seconds else None
 
+
+async def drive_estimate_min(
+    origin: tuple[float, float], dest: tuple[float, float]
+) -> tuple[int | None, str | None]:
+    """Drive time in minutes and *what kind of number it is*.
+
+    Returns ``(minutes, kind)`` where kind is ``traffic`` or ``free_flow``.
+    The pair is deliberately inseparable: 22 minutes free-flow and 22 minutes
+    in traffic describe completely different journeys, and a caller that gets
+    only the number cannot label it honestly.
+
+    ``(None, None)`` is a legitimate, common answer — provider down, or no
+    drivable route. It must read as "we don't know", never as a number.
+    """
     from app.services import otp_store
 
-    key = _cache_key(origin, dest)
+    kind = TRAFFIC if has_traffic_provider() else FREE_FLOW
+    key = f"{_cache_key(origin, dest)}:{kind}"
+
     try:
         cached = otp_store._store.get(key)
         if cached is not None:
-            return int(cached) if cached != "none" else None
+            return (int(cached) if cached != "none" else None), kind
     except Exception:  # noqa: BLE001 - a cache miss must never fail the request
         logger.warning("Routing cache unavailable; calling the provider directly")
 
     try:
         if settings.google_maps_api_key:
             minutes = await _google(origin, dest)
-        else:
+        elif settings.mapbox_access_token:
             minutes = await _mapbox(origin, dest)
+        else:
+            minutes = await _valhalla(origin, dest)
     except Exception as exc:  # noqa: BLE001 - network, quota, auth, bad response
         # Logged, not raised: a commute tab that 500s because a third party is
         # down is worse than one missing a single annotation.
         logger.warning("Routing lookup failed: %s", type(exc).__name__)
-        return None
+        return None, kind
 
     try:
-        # "none" is cached too, so a provider outage doesn't mean hammering it
-        # on every page load.
+        # "none" is cached too, so a provider outage doesn't mean hammering a
+        # donation-funded service on every page load.
         value = str(minutes) if minutes is not None else "none"
         otp_store._store.set(key, value, CACHE_TTL_S)
     except Exception:
         logger.debug("Could not cache routing result", exc_info=True)
-    return minutes
+    return minutes, kind
