@@ -10,6 +10,7 @@ What this imports, and why it's allowed to:
   LGAs, neighbourhoods, transit   OpenStreetMap via Overpass    ODbL 1.0
   Named residential buildings     OpenStreetMap via Overpass    ODbL 1.0
   Estate agent listings           Overture Places (Meta et al)  CDLA Permissive 2.0
+  Rent inflation benchmark        NBS CPI HOUSING (RENT) INDEX  public, no licence stated
   Ground elevation                Open-Elevation (SRTM)         public domain
   Flood banding                   derived from elevation        NIHSA thresholds
 
@@ -58,11 +59,12 @@ from app.db.models import (
     DataSource,
     Neighbourhood,
     Property,
+    RentBenchmark,
     TransitOption,
 )
 from app.db.session import SessionLocal
 from app.services import identity, opendata
-from app.services.opendata import OVERTURE
+from app.services.opendata import NBS, OVERTURE
 
 settings = get_settings()
 
@@ -362,6 +364,57 @@ async def import_agents(
     return added
 
 
+async def import_rent_benchmark(
+    session: AsyncSession, *, offline: bool, dry_run: bool
+) -> int:
+    """Import Nigeria's official rent index, for comparison against reports.
+
+    This does not replace anything tenants say. It sits beside their numbers so
+    a rent rise has something to be measured against: "yours went up 40%,
+    nationally rents rose 15%" is a far more useful sentence than either half
+    alone, and it is the sentence this product exists to be able to write.
+    """
+    series = opendata.year_on_year(opendata.nbs_rent_index(offline=offline))
+    log.info("NBS returned %d monthly rent index points", len(series))
+
+    existing = {
+        (b.period_year, b.period_month): b
+        for b in (
+            await session.execute(
+                select(RentBenchmark).where(RentBenchmark.scope == "national")
+            )
+        ).scalars().all()
+    }
+
+    written = 0
+    for row in series:
+        key = (row["year"], row["month"])
+        if dry_run:
+            written += 1
+            continue
+        record = existing.get(key)
+        if record is None:
+            record = RentBenchmark(
+                scope="national", period_year=row["year"], period_month=row["month"]
+            )
+            session.add(record)
+        # Revisions happen: NBS restates recent months as late returns arrive.
+        record.index_value = row["index"]
+        record.yoy_pct = row["yoy_pct"]
+        written += 1
+
+    if not dry_run:
+        await _record(session, "benchmark", "national-rent", "index", NBS)
+
+    latest = series[-1] if series else None
+    if latest:
+        log.info(
+            "  %d periods; latest %d-%02d at %.1f%% year-on-year",
+            written, latest["year"], latest["month"], latest["yoy_pct"] or 0.0,
+        )
+    return written
+
+
 async def import_elevation(
     session: AsyncSession, *, offline: bool, dry_run: bool
 ) -> int:
@@ -455,7 +508,10 @@ async def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--what",
-        choices=["all", "lgas", "areas", "properties", "agents", "elevation", "transit"],
+        choices=[
+            "all", "lgas", "areas", "properties", "agents",
+            "rent-index", "elevation", "transit",
+        ],
         default="all",
     )
     ap.add_argument(
@@ -490,6 +546,12 @@ async def main() -> None:
         if args.what in ("all", "agents"):
             log.info("\n== Estate agents (Overture Places, CDLA Permissive 2.0) ==")
             await import_agents(session, offline=args.offline, dry_run=args.dry_run)
+
+        if args.what in ("all", "rent-index"):
+            log.info("\n== Rent benchmark (NBS CPI HOUSING (RENT) INDEX) ==")
+            await import_rent_benchmark(
+                session, offline=args.offline, dry_run=args.dry_run
+            )
 
         if args.what in ("all", "elevation"):
             log.info("\n== Elevation & flood banding (SRTM, public domain) ==")

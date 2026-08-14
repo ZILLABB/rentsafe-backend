@@ -346,6 +346,37 @@ class SavedProperty(Base):
     created_at: Mapped[dt.datetime] = mapped_column(TZDateTime, server_default=func.now())
 
 
+class RentBenchmark(Base):
+    """Official rent inflation, for comparison against what tenants report.
+
+    Every rent figure in this app comes from tenants, which is the point — but
+    it also means a tenant seeing "your rent rose 40%" has nothing to judge that
+    against. The NBS publishes a dedicated HOUSING (RENT) INDEX inside the CPI
+    (weight 4.23), which is a genuine rent series rather than the housing-plus-
+    utilities division people usually reach for.
+
+    National, not Lagos. NBS does not publish the rent index by state, so
+    anything shown from this must say which country it describes.
+    """
+
+    __tablename__ = "rent_benchmarks"
+
+    __table_args__ = (
+        UniqueConstraint("scope", "period_year", "period_month", name="uq_benchmark_period"),
+    )
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    scope: Mapped[str] = mapped_column(String(20), default="national", index=True)
+    period_year: Mapped[int] = mapped_column(Integer, nullable=False)
+    period_month: Mapped[int] = mapped_column(SmallInteger, nullable=False)
+    index_value: Mapped[float] = mapped_column(Numeric(10, 4), nullable=False)
+    # Year-on-year percentage change, null until twelve months of history exist.
+    yoy_pct: Mapped[float | None] = mapped_column(Numeric(6, 2))
+    created_at: Mapped[dt.datetime] = mapped_column(
+        TZDateTime, server_default=func.now()
+    )
+
+
 class DataSource(Base):
     """Provenance for anything imported from an external dataset.
 

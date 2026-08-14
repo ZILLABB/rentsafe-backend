@@ -7,7 +7,7 @@ from pydantic import BaseModel
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.db.models import Neighbourhood, Property, Review
+from app.db.models import Neighbourhood, Property, RentBenchmark, Review
 from app.db.session import get_session
 
 router = APIRouter(prefix="/neighbourhoods", tags=["neighbourhoods"])
@@ -101,3 +101,46 @@ async def compare(
         raise HTTPException(status_code=404, detail=f"Unknown areas: {missing}")
     counts = await _live_counts(session)
     return CompareOut(areas=[_with_counts(by_code[c], counts) for c in wanted])
+
+
+class RentBenchmarkOut(BaseModel):
+    """Official rent inflation, for comparison against tenant reports."""
+
+    # Null until the series has twelve months in it — a year-on-year figure
+    # computed from less than a year is not a year-on-year figure.
+    yoy_pct: float | None = None
+    period_year: int | None = None
+    period_month: int | None = None
+    # National, because NBS does not publish the rent index by state. The UI has
+    # to say so rather than let a reader assume it describes Lagos.
+    scope: str = "national"
+    source: str = "NBS Consumer Price Index — HOUSING (RENT) INDEX"
+    url: str = "https://microdata.nigerianstat.gov.ng/index.php/catalog/154"
+
+
+@router.get("/rent-benchmark", response_model=RentBenchmarkOut)
+async def rent_benchmark(
+    session: AsyncSession = Depends(get_session),
+) -> RentBenchmarkOut:
+    """The most recent official rent inflation figure.
+
+    Everything else in this app reports what tenants paid. This is the one
+    number that comes from outside, and its whole job is to give those reports
+    something to be measured against.
+    """
+    row = (
+        await session.execute(
+            select(RentBenchmark)
+            .where(RentBenchmark.scope == "national", RentBenchmark.yoy_pct.is_not(None))
+            .order_by(RentBenchmark.period_year.desc(), RentBenchmark.period_month.desc())
+            .limit(1)
+        )
+    ).scalar_one_or_none()
+
+    if row is None:
+        return RentBenchmarkOut()
+    return RentBenchmarkOut(
+        yoy_pct=round(float(row.yoy_pct), 1),
+        period_year=row.period_year,
+        period_month=row.period_month,
+    )

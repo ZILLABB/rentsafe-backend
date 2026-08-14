@@ -812,3 +812,118 @@ def lagos_estate_agents(*, offline: bool = False) -> list[dict]:
         seen.add(key)
         out.append(row)
     return sorted(out, key=lambda r: r["name"])
+
+
+# Nigeria's National Bureau of Statistics publishes the CPI monthly as a zipped
+# workbook. Inside Table 2 is a dedicated "HOUSING (RENT) INDEX" (weight 4.23) —
+# an actual rent series, not the Housing/Water/Electricity/Gas division that
+# bundles utilities in with rent and is what most people quote by mistake.
+NBS_CPI_CATALOG = "https://microdata.nigerianstat.gov.ng/index.php/catalog/154"
+NBS = (
+    "National Bureau of Statistics (Nigeria)",
+    "Public — no reuse licence stated",
+    NBS_CPI_CATALOG,
+)
+
+_MONTHS = {
+    m: i
+    for i, m in enumerate(
+        ["jan", "feb", "mar", "apr", "may", "jun",
+         "jul", "aug", "sep", "oct", "nov", "dec"],
+        start=1,
+    )
+}
+
+
+def _latest_cpi_zip_url() -> str:
+    """Find the newest CPI release on the catalogue page.
+
+    The download URL embeds a resource id that changes every month, so it is
+    discovered rather than pinned — otherwise this silently stops updating and
+    starts quoting last year's inflation as current.
+    """
+    with httpx.Client(timeout=90, headers={"User-Agent": USER_AGENT}, follow_redirects=True) as c:
+        html = c.get(NBS_CPI_CATALOG).text
+    links = re.findall(r'href="([^"]*/download/\d+/[^"]*\.zip)"', html)
+    if not links:
+        raise OpenDataError("No CPI download found on the NBS catalogue page.")
+    # The page lists newest first; de-duplicate while preserving that order.
+    return next(iter(dict.fromkeys(links)))
+
+
+def nbs_rent_index(*, offline: bool = False) -> list[dict]:
+    """Nigeria's monthly rent index, newest last.
+
+    Returns ``[{"year", "month", "index"}]``. Year-on-year change is left to the
+    caller, because it is only meaningful once twelve months exist and inventing
+    it before then would be exactly the kind of confident-but-baseless number
+    this app exists to replace.
+    """
+
+    def fetch() -> list[dict]:
+        import io
+        import zipfile
+
+        import openpyxl  # optional dependency — see pyproject [import]
+
+        url = _latest_cpi_zip_url()
+        logger.info("Fetching NBS CPI release")
+        with httpx.Client(timeout=180, headers={"User-Agent": USER_AGENT}, follow_redirects=True) as c:
+            payload = c.get(url).content
+
+        archive = zipfile.ZipFile(io.BytesIO(payload))
+        sheet_name = next(n for n in archive.namelist() if n.lower().endswith(".xlsx"))
+        book = openpyxl.load_workbook(
+            io.BytesIO(archive.read(sheet_name)), read_only=True, data_only=True
+        )
+
+        # Locate the rent column by header text rather than position: NBS moves
+        # columns between releases, and a hardcoded index would silently start
+        # reading a different series.
+        for ws in (book[n] for n in book.sheetnames):
+            header = next(ws.iter_rows(min_row=2, max_row=2, values_only=True), ())
+            col = next(
+                (
+                    i
+                    for i, cell in enumerate(header)
+                    if cell and "housing" in str(cell).lower() and "rent" in str(cell).lower()
+                ),
+                None,
+            )
+            if col is None:
+                continue
+
+            out: list[dict] = []
+            year = None
+            for row in ws.iter_rows(min_row=3, values_only=True):
+                if row[0] and str(row[0]).strip().isdigit():
+                    year = int(str(row[0]).strip())
+                month = _MONTHS.get(str(row[1] or "")[:3].lower())
+                value = row[col] if col < len(row) else None
+                if year and month and isinstance(value, (int, float)):
+                    out.append({"year": year, "month": month, "index": float(value)})
+            if out:
+                return sorted(out, key=lambda r: (r["year"], r["month"]))
+
+        raise OpenDataError("No HOUSING (RENT) INDEX column in the NBS workbook.")
+
+    return _get_or_fetch("nbs_rent_index", fetch, offline=offline)
+
+
+def year_on_year(series: list[dict]) -> list[dict]:
+    """Annotate a monthly index series with year-on-year percentage change."""
+    by_period = {(r["year"], r["month"]): r["index"] for r in series}
+    out = []
+    for row in series:
+        prior = by_period.get((row["year"] - 1, row["month"]))
+        out.append(
+            {
+                **row,
+                "yoy_pct": (
+                    round((row["index"] / prior - 1) * 100, 2)
+                    if prior and prior > 0
+                    else None
+                ),
+            }
+        )
+    return out
