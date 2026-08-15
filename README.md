@@ -113,6 +113,15 @@ Stated plainly so nothing on screen implies otherwise:
   and are accurate about what the system does, but no Nigerian lawyer has read
   them.
 
+## What it costs to run
+
+About **₦12,000/month** for a pilot, **₦42,000–46,000** at a thousand users.
+The surprise is that map tiles dominate, not SMS — and the largest cost before
+launch is a lawyer, not a server.
+
+Full model with sources and assumptions:
+[`docs/COSTS.md`](docs/COSTS.md).
+
 ## Backups
 
 The reviews are the only irreplaceable data here; everything else re-imports.
