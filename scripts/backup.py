@@ -38,6 +38,7 @@ from urllib.parse import urlparse
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from app.config import get_settings
+from app.services import alerting
 
 settings = get_settings()
 
@@ -205,6 +206,7 @@ def main() -> None:
         # Leave the bad file in place for inspection, but fail loudly: a backup
         # job that exits zero on a broken dump is worse than none, because it
         # buys false confidence.
+        alerting.alert("backup", "verification failed", detail=f"{path}: {detail}")
         raise SystemExit(1)
 
     if args.keep:
@@ -212,6 +214,20 @@ def main() -> None:
         if pruned:
             print(f"     pruned {pruned} older backup(s), keeping {args.keep}")
 
+    # Only on success, and only at the very end — after verification and after
+    # pruning, so a heartbeat means the whole job worked rather than that it
+    # started.
+    if alerting.heartbeat("backup"):
+        print("     heartbeat sent")
+
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except SystemExit:
+        raise
+    except Exception as exc:
+        # An unhandled crash is exactly when nobody finds out, because there is
+        # no non-zero exit anyone reads and no heartbeat to go missing yet.
+        alerting.alert("backup", "crashed", detail=f"{type(exc).__name__}: {exc}")
+        raise

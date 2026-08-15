@@ -17,9 +17,35 @@ the day they are needed.
 python -m scripts.backup --out /var/backups/rentsafe --keep 14
 ```
 
-Exits non-zero if the dump is unreadable, truncated, or not a database. **Alert
-on that exit code.** A backup job that reports success on a broken dump is worse
-than no backup, because it buys false confidence.
+Exits non-zero if the dump is unreadable, truncated, or not a database, and
+reports it. A backup job that claims success on a broken dump is worse than no
+backup, because it buys false confidence.
+
+### Alerting — two channels, two different questions
+
+```bash
+BACKUP_HEARTBEAT_URL=https://hc-ping.com/<uuid>   # pinged only on success
+ALERT_WEBHOOK_URL=https://hooks.slack.com/…       # posted to on failure
+```
+
+| Channel | When | Catches |
+|---|---|---|
+| Heartbeat | success only | **the job never ran** — cron removed, container unscheduled, host down |
+| Webhook | failure | *why* it failed, when it did run |
+
+The heartbeat matters more than it looks. A failure webhook cannot fire if cron
+is gone, the disk filled before the script started, or the container stopped
+being scheduled — and every one of those looks exactly like a quiet success
+from the inside. An external monitor expecting a daily ping is the only thing
+that notices absence.
+
+Set the monitor's period to your schedule plus a grace window (daily backup →
+period 1 day, grace 1 hour). Healthchecks.io, Better Stack and Cronitor all do
+this on a free tier; any URL that accepts a GET works.
+
+**Test it before trusting it.** Comment out the cron line for a day and check
+you actually get paged. An alert nobody has ever seen fire is the same class of
+hope as a backup nobody has restored.
 
 What it does:
 
@@ -172,6 +198,7 @@ Stated plainly so nobody assumes otherwise:
 - **Backups are not encrypted at rest by this script.** They contain phone
   hashes and unpublished review text. Encrypt the bucket, or pipe through `age`
   or `gpg` before upload.
-- **Nobody is alerted yet.** The script exits non-zero correctly; wiring that
-  to a pager is a deployment task, and until it is done a silently failing
-  backup is still possible.
+- **The alert channels are wired but not pointed anywhere.** Both settings are
+  empty by default, and the code degrades to logging only. Until
+  `BACKUP_HEARTBEAT_URL` has a real monitor behind it, a job that stops running
+  is still silent.

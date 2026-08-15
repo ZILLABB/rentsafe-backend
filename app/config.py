@@ -79,6 +79,16 @@ class Settings(BaseSettings):
     termii_api_key: str = Field(default="")
     sentry_dsn: str = Field(default="")
 
+    # Operational alerting for unattended jobs. Both optional.
+    #
+    # The heartbeat is pinged only when a backup *succeeds*, so an external
+    # monitor alerts when the ping stops. That is the only way to detect the
+    # job never running at all — a failure webhook cannot fire if cron is gone.
+    backup_heartbeat_url: str = Field(default="")
+    # Posted to on failure. Payload carries both `text` and `content`, so the
+    # same body works with a Slack or a Discord incoming webhook unchanged.
+    alert_webhook_url: str = Field(default="")
+
     # Signs JWTs. Rotating this invalidates live sessions — which is the point.
     jwt_secret: str = Field(default="dev-secret-change-me")
 
