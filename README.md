@@ -113,6 +113,23 @@ Stated plainly so nothing on screen implies otherwise:
   and are accurate about what the system does, but no Nigerian lawyer has read
   them.
 
+## Backups
+
+The reviews are the only irreplaceable data here; everything else re-imports.
+
+```bash
+python -m scripts.backup --out /var/backups/rentsafe --keep 14   # nightly
+python -m scripts.restore FILE --into /tmp/drill.db              # monthly drill
+```
+
+Verification reads gzipped dumps through to the CRC trailer rather than
+checking a header, because a dump truncated by a full disk still starts with a
+valid `SQLite format 3`. The restore drill fails if the recovered database has
+no reviews in it.
+
+Full procedure, including the incident path and what is deliberately *not*
+covered: [`docs/RUNBOOK-backup-restore.md`](docs/RUNBOOK-backup-restore.md).
+
 ## Operating it
 
 - **`/health/ready`** checks the database and cache and returns 503 when either

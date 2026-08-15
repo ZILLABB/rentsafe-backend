@@ -24,3 +24,7 @@ data/media/
 Thumbs.db
 .idea/
 .vscode/
+
+# Local backup output — these contain phone hashes and unpublished
+# review text and must never be committed.
+backups/
