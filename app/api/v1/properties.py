@@ -9,7 +9,7 @@ GET  /api/v1/properties/{property_id}/environment
 
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Response
 from sqlalchemy import func, or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
@@ -92,6 +92,7 @@ def _with_relations(stmt):
 
 @router.get("", response_model=list[PropertyOut])
 async def list_properties(
+    response: Response,
     session: AsyncSession = Depends(get_session),
     q: str | None = Query(default=None, description="Address or PropertyID search"),
     lga: str | None = Query(default=None),
@@ -122,6 +123,17 @@ async def list_properties(
         stmt = stmt.where(Property.avg_rating >= min_rating)
     if flood_risk:
         stmt = stmt.where(Property.flood_zone == flood_risk)
+    # How many match *before* the page limit. Without it the client cannot tell
+    # a complete result from a truncated one, and the Explore counter said
+    # "50 properties" while 188 matched — the same silent truncation the agent
+    # directory had, reappearing as soon as the data grew.
+    total = (
+        await session.execute(
+            select(func.count()).select_from(stmt.order_by(None).subquery())
+        )
+    ).scalar_one()
+    response.headers["X-Total-Count"] = str(total)
+
     stmt = _with_relations(stmt).order_by(Property.total_reviews.desc())
     props = (await session.execute(stmt.limit(limit).offset(offset))).scalars().all()
     slugs = await _agent_slugs(session, [p.id for p in props])

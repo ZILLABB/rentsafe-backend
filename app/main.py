@@ -84,6 +84,9 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    # Without this a cross-origin browser cannot read the header at all, and the
+    # client silently falls back to assuming the page it got is the whole set.
+    expose_headers=["X-Total-Count", "X-Request-ID"],
 )
 
 app.include_router(api_router)
